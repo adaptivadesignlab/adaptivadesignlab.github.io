@@ -1,4 +1,4 @@
-baseurl: /adaptivadesignlab
+baseurl: adaptivadesignlab.github.io
 exclude: ['README.md']
 permalink: pretty
 gems: [jekyll-paginate]
