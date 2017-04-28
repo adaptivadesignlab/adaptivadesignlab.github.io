@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<header class="header header-home">
+  <section class="featured-content">
+  <div class="content">
+    {% for post in site.posts %}
+      {% if post.featured == true %}
+      {% capture counttwo %}{{ counttwo | plus: '1' }}{% endcapture %}
+      {% if counttwo == '1' %}
+    <h2 class="push-5"><a class="featured-post-img-wrap" href="{{post.url}}">{{post.title}}</a></h2>
+    <div class="j-col j-col-4 featured-post-img push-1">
+      <a class="featured-post-img-wrap" href="{{post.url}}">
+        <img src="{{site.baseurl}}/assets/img/posts/{{post.image}}" />
+    </div>
+    </a>
+    <div class="featured-content-txt">
+      <p>{{post.meta}}</p>
+      <a href="{{post.url}}" class="button dark-blue">Read More</a>
+    </div>
+    {% endif %}
+    {% endif %}
+  {% endfor %}
+  </div>
+  </section>
+</header>
+<section class="recent-posts">
+  <div class="content">
+    <h2>Recent Posts</h2>
+    {% for post in site.posts limit:3 %}
+    <div class="recent-post j-row j-col j-col-9 wrap push-3">
+        <a title="{{post.title}}" href="{{post.url | relative_url}}">
+          <h3 class="recent-post-title j-col j-col-6">{{post.title}}</h3>
+          <p class="recent-post-snippet j-col j-col-6">{{post.meta}}<br><span class="post-date">{{post.posted}}</span> <span class="post-author">by {{post.author}}</span></p>
+        </a>
+    </div>
+    {% endfor %}
+    <div class="j-row recent-posts-button">
+      <a href="{{"/blog" | relative_url}}" class="button green">See all posts</a>
+    </div>
+  </div>
+</section>
+<section class="homepage-links">
+  <div class="content">
+    <a class="j-row j-col j-col-12 wrap homepage-link vertical-center-row" href="{{"/guidelines" | relative_url}}">
+      <div class="j-col j-col-6 homepage-link-img guidelines"></div>
+      <div class="homepage-link-txt j-col j-col-7 push-5">
+        <h2>Brand Guidelines</h2>
+        <p>Read the guidelines we've documented to learn how to properly use Adaptiva brand colors, typefaces, the logo mark, and more.</p>
+        <span class="homepage-link-cta"><div class="cta-push"></div><span class="fancy-link">Check it out</span>
+      </span>
+      </div>
+    </a>
+    <a class="j-row j-col j-col-12 wrap homepage-link vertical-center-row" href="{{"/assets" | relative_url}}">
+      <div class="j-col j-col-6 homepage-link-img assets"></div>
+      <div class="homepage-link-txt j-col j-col-12">
+        <h2>Brand Assets</h2>
+        <p>Free vectors for everyone! Spread the word — the more people that have access to proper assets, the less we'll see of deprecated, low-res garbage around the internet.</p>
+        <span class="homepage-link-cta">
+          <div class="cta-push"></div><span class="fancy-link">Downloads!</span>
+          </span>
+      </div>
+    </a>
+    <a class="j-row j-col j-col-12 wrap homepage-link vertical-center-row" href="{{"/about" | relative_url}}">
+      <div class="j-col j-col-6 homepage-link-img about">
+      </div>
+      <div class="homepage-link-txt j-col j-col-7 push-5">
+        <h2>About the Design Lab</h2>
+        <p>Hmm, this title is a little self-explanatory, huh?</p>
+        <span  class="homepage-link-cta">
+          <div class="cta-push"></div><span class="fancy-link">Get to know us</span>
+        </span>
+      </div>
+    </a>
+  </div>
+</section>
