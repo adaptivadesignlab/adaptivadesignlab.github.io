@@ -15,10 +15,10 @@ For the sake of web performance and _convenience_ (see the [introduction]({{site
 
 ## Typefaces
 
-<h3 class="tk-museo-sans">Museo Sans</h3>
+<h3 style="font-family: 'museo-sans', 'Poppins', sans-serif;">Museo Sans</h3>
 Museo Sans is our primary font, which we use for pretty much everything. It's refined, scalable and legible, and ugh, the kerning is beautiful. We use font weights 300, 500, and 700, and `letter-spacing`/tracking is always `0`.
 
-<h3 class="tk-futura-pt">FUTURA PT</h3>
+<h3 style="font-family: 'futura-pt', 'Poppins', sans-serif;"><strong>FUTURA PT</strong></h3>
 Futura PT Heavy is our alternative font. It's bold, honest, and demands attention. We don't use it often — mostly for illustrations, video/animation, and the occasional one-off print project, but never on the web. Futura PT Heavy is always used in all caps, with the tracking set to 100-200. We use the font weight "Heavy" most of the time, but "Book" is also a viable option.
 
 <h3 style="font-family: 'Segoe UI', 'Poppins', sans-serif; font-weight: normal;">Segoe UI</h3>
