@@ -1,0 +1,42 @@
+---
+title: Blog
+layout: default
+---
+<header class="header header-blog">
+  <div class="content">
+    <div class="blog-page-title j-col j-col-8 push-4">
+      <h1>Adaptiva Design Lab Blog</h1>
+      <p>Entries by Design Lab leadership on art and design, inspiration, web development, and more</p>
+    </div>
+    </div>
+  </div>
+</header>
+<section class="blog-posts">
+    <ul class="blog-post-list">
+      {% for post in paginator.posts %}
+      <li class="blog-post">
+        <a title="{{post.title}}" href="{{post.url | relative_url}}" class="j-row">
+          <div cl<div class="content">
+            <h3 class="blog-post-title j-col j-col-6">{{post.title}}</h3>
+            <p class="blog-post-excerpt j-col j-col-6">{{post.meta}}<br><span class="post-date">{{post.posted}}</span> <span class="post-author">by {{post.author}}</span></p>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+</section>
+<section class="pagination">
+  <div class="content">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    {% else %}
+    <span class="previous no-previous">Previous</span>
+    {% endif %}
+    <span class="page-number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+    <span class="next no-next">Next</span>
+    {% endif %}
+  </div>
+</section>

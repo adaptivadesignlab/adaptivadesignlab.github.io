@@ -1,0 +1,300 @@
+.header-home {
+  height: 500px;
+  position: relative;
+  margin-bottom: 68px;
+  &:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 75%;
+    min-width: 1180px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $blue;
+    z-index: -1;
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+  @media #{$mobile} {
+    height: auto;
+    background: $blue;
+  }
+}
+
+.featured-content {
+  padding-top: 4.2em;
+  h2 {
+    padding-left: 1.618rem;
+    font-size: 2rem;
+    margin-top: 2.618em;
+    a {
+      color: $darkest-blue;
+    }
+    @media #{$mobile} {
+      margin: 0;
+      padding: 20px;
+      color: $white;
+    }
+  }
+  .featured-post-img {
+    background: $dark-blue;
+    position: relative;
+    padding: 0;
+    .featured-post-img-wrap {
+      height: 400px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      overflow: hidden;
+      img {
+        max-width: none;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      @media #{$mobile} {
+        max-height: 300px;
+        overflow: hidden;
+        display: block;
+        height: auto;
+        img {
+          height: auto;
+          max-width: 100%;
+        }
+      }
+    }
+    &:before {
+      content: '';
+      display: block;
+      top: -2px;
+      left: 0;
+      height: 2px;
+      background: $dark-blue;
+      width: 100vw;
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+  }
+  .featured-content-txt {
+    padding: 1.618em;
+    overflow: hidden;
+    p {
+      color: lighten($dark-blue, 50%);
+      padding: 0;
+      margin: 0 0 1.618em 0;
+      max-width: 500px;
+      @media #{$mobile} {
+        color: lighten($blue, 42%);
+      }
+    }
+  }
+  @media #{$mobile} {
+    padding: 0;
+    h1 {
+      margin: 0;
+      padding: 1.618rem 20px;
+      background: $blue;
+    }
+  }
+}
+
+// Recent Posts
+// ----------
+
+.recent-posts {
+  padding: 110px 0;
+  h2 {
+    @include cool-title-border-thing;
+    font-size: 2.618rem;
+    color: $dark-black;
+    margin-top: 0;
+    @media #{$mobile} {
+      padding: 0 20px;
+    }
+  }
+  .recent-post {
+    display: block;
+    padding: 1em 0;
+    border-bottom: 2px solid lighten($black, 68%);
+    transition: 300ms;
+    > a {
+      display: block;
+      overflow: hidden;
+    }
+    &:hover {
+      border-color: $blue;
+      h3,
+      p {
+        color: $blue;
+      }
+    }
+    * {
+      transition: $easy-ease;
+      color: $dark-black;
+    }
+    h3,
+    p {
+      margin-top: 0;
+    }
+    h3 {
+      font-size: 1.618rem;
+      margin-bottom: 0;
+    }
+    p {
+      margin-bottom: 0;
+      .post-date, .post-author {
+        color: lighten($black, 42%);
+        font-size: 0.8em;
+      }
+    }
+    &:last-child {
+      margin-bottom: 1.618rem;
+    }
+  }
+  .recent-posts-button {
+    text-align: right;
+    padding-top: 1.618em;
+    overflow: visible;
+    @media #{$mobile} {
+      padding-right: 20px;
+    }
+  }
+  @media #{$mobile} {
+    padding: 0 0 42px;
+  }
+}
+
+// Homepage Links
+// ---------
+section.homepage-links {
+  padding: 110px 0;
+  position: relative;
+  margin-bottom: 68px;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 68%;
+    min-width: 1180px;
+    top: 0;
+    right: 0;
+    background: #fafafa;
+    z-index: -2;
+  }
+  .homepage-link {
+    position: relative;
+    padding: 110px 0;
+    margin-bottom: 110px;
+    text-decoration: none;
+    overflow: hidden;
+    color: $dark-black;
+    .homepage-link-img {
+      height: 400px;
+      background: #ddd;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      z-index: -1;
+      background-size: 178px;
+      background-position: center;
+      background-repeat: no-repeat;
+      &.guidelines {
+        background-color: lighten($blue, 42%);
+        background-image: url('{{'/assets/img/icons/brand-book.svg' | relative_url}}');
+      }
+      &.assets {
+        background-color: lighten($orange, 26%);
+        background-image: url('{{'/assets/img/icons/brand-assets.svg' | relative_url}}');
+      }
+      &.about {
+        background: lighten($green, 10%);
+        background-image: url('{{'/assets/img/icons/about.svg' | relative_url}}');
+        background-size: 288px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      @media #{$mobile} {
+        position: static;
+        height: 240px;
+        top: auto;
+        transform: none;
+      }
+    }
+    .homepage-link-txt {
+      p {
+        max-width: 500px;
+      }
+      .homepage-link-cta {
+        display: block;
+        text-decoration: none;
+        color: $dark-black;
+        @media #{$mobile} {
+          text-align: right;
+        }
+      }
+      .cta-push {
+        display: inline-block;
+        height: 2px;
+        width: 29.6em;
+        @media screen and (max-width: 1199px) {
+          display: none;
+        }
+      }
+    }
+    &:nth-child(even) {
+      justify-content: flex-start;
+      .homepage-link-img {
+        left: calc(25% + 20px);
+        @media #{$mobile} {
+          left: auto;
+        }
+      }
+      .homepage-link-txt {
+        position: relative;
+        margin-left: 0;
+        .cta-push {
+          width: 60.8em;
+        }
+      }
+    }
+    &:nth-child(1) {
+      .fancy-link {
+        &:hover {
+          box-shadow: inset 6.8em 0 0 lighten($blue, 42%);
+        }
+      }
+    }
+    &:nth-child(2) {
+      .fancy-link {
+        &:hover {
+          box-shadow: inset 6.8em 0 0 lighten($orange, 26%);
+        }
+      }
+    }
+    &:nth-child(3) {
+      .fancy-link {
+        &:hover {
+          box-shadow: inset 6.8em 0 0 lighten($green, 10%);
+        }
+      }
+    }
+    @media #{$mobile} {
+      padding: 0;
+      margin-bottom: 42px;
+    }
+  }
+  @media #{$mobile} {
+    padding: 0;
+  }
+}

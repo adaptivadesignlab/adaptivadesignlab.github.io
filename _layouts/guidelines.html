@@ -1,0 +1,39 @@
+---
+layout: default
+navclass: ondark
+---
+<header class="header header-guidelines">
+  <div class="content">
+    <h1>{{page.title}}</h1>
+  </div>
+</header>
+<section class="guideline-entry">
+  <div class="content">
+    <aside class="guidelines-nav">
+      <h3 class="guideline-nav-header">Brand Guidelines</h3>
+      <ul class="guidelines-list">
+        <li class="guidelines-item">
+          {% if page.url == "/guidelines/" %}
+          <a href="{{"/guidelines" | relative_url}}" class="current">Introduction</a>
+          {% else %}
+          <a href="{{"/guidelines" | relative_url}}">Introduction</a>
+          {% endif %}
+        </li>
+        {% for entry in site.pages %}
+          {% if entry.type == 'guideline' %}
+            <li class="guidelines-item">
+              {% if page.url == entry.permalink %}
+              <a href="{{entry.url | relative_url}}" class="current">{{entry.title}}</a>
+              {% else %}
+              <a href="{{entry.url | relative_url}}">{{entry.title}}</a>
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </aside>
+    <article class="guidelines-content push-4">
+        {{content}}
+    </article>
+  </div>
+</section>

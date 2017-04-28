@@ -1,0 +1,93 @@
+- title: Blue
+  hex: '#0860b8'
+  rgb: 'rgb(8, 96, 184)'
+  var: '$blue / @blue'
+  pan: 'Pantone Solid Coated 2131 C'
+
+- title: Dark Blue
+  hex: '#073971'
+  rgb: 'rgb(7, 57, 113)'
+  var: '$dark-blue / @dark-blue'
+
+- title: Darker Blue
+  hex: '#052b55'
+  rgb: 'rgb(5, 43, 85)'
+  var: '$darker-blue / @darker-blue'
+
+- title: Darkest Blue
+  hex: '#041d39'
+  rgb: 'rgb(7, 57, 113)'
+  var: '$darkest-blue / @darkest-blue'
+
+- title: Bright Blue
+  hex: '#41cdfc'
+  rgb: 'rgb(65, 205, 252)'
+  var: '$bright-blue / @bright-blue'
+
+- title: Orange
+  hex: '#ff902c'
+  rgb: 'rgb(255, 144, 44)'
+  var: '$orange / @orange'
+
+- title: Red
+  hex: '#ed4e39'
+  rgb: 'rgb(237, 78, 57)'
+  var: '$red / @red'
+
+- title: Yellow
+  hex: '#f9ef3b'
+  rgb: 'rgb(249, 239, 60)'
+  var: '$yellow / @yellow'
+  title_color: '#222'
+
+- title: Purple
+  hex: '#4e57f4'
+  rgb: 'rgb(78, 87, 244)'
+  var: '$purple / @purple'
+
+- title: Green
+  hex: '#4dcf83'
+  rgb: 'rgb(76, 223, 131)'
+  var: '$green / @green'
+
+- title: Dark Green
+  hex: '#2cb566'
+  rgb: 'rgb(44, 181, 102)'
+  var: '$dark-green / @dark-green'
+
+- title: Gray
+  hex: '#ccc'
+  rgb: 'rgb(204, 204, 204)'
+  var: '$gray / @gray'
+  title_color: '#222'
+
+- title: Light Gray
+  hex: '#eee'
+  rgb: 'rgb(238, 238, 238)'
+  var: '$light-gray / @light-gray'
+  border: '1px solid #ccc'
+  title_color: '#222'
+
+- title: Lightest Gray
+  hex: '#f9f9f9'
+  rgb: 'rgb(249, 249, 249)'
+  var: '$lightest-gray / @lightest-gray'
+  border: '1px solid #ccc'
+  title_color: '#222'
+
+- title: White
+  hex: '#fff'
+  rgb: 'rgb(255, 255, 255)'
+  var: '$white / @white'
+  title_color: '#222'
+
+- title: Black
+  hex: '#404041'
+  rgb: 'rgb(64, 64, 65)'
+  var: '$black / @black'
+  pan: 'Pantone Solid Coated Black 7 C'
+
+- title: Dark Black
+  hex: '#222'
+  rgb: 'rgb(34, 34, 34)'
+  var: '$dark-black / @dark-black'

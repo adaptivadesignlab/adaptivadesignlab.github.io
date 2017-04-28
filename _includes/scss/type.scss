@@ -1,0 +1,75 @@
+p, h1, h2, h3, h4, ul, li, div, span {
+  color: $dark-black;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.618;
+  font-weight: 400;
+  a {
+    color: $dark-black;
+    border-bottom: 1px solid $yellow;
+    box-shadow: inset 0px -0.42em 0 0 $yellow;
+    transition: box-shadow 400ms $snap;
+    &:hover {
+      box-shadow: inset 0px -1.618em 0 0 $yellow;
+    }
+  }
+}
+
+strong {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.618rem;
+}
+
+h2 {
+  font-size: 1.618rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+* a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+code, pre, pre * {
+  font-family: monospace;
+}
+
+figure.highlight {
+  background-color: $black;
+  max-width: 100%;
+  overflow-x: scroll;
+  padding: 20px;
+  margin: 0;
+  code, pre {
+    display: block;
+  }
+  pre {
+    margin: 0;
+  }
+  code {
+    color: $white;
+    span {
+      color: white;
+    }
+  }
+}

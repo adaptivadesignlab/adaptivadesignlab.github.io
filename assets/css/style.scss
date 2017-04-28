@@ -1,0 +1,655 @@
+---
+---
+* {
+  box-sizing: border-box;
+}
+
+// Breakpoints
+// ----------
+{% include scss/breakpoints.scss %}
+
+// Framework
+// ----------
+{% include scss/jframework.scss %}
+
+// Mixins
+// ----------
+@mixin vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  @media #{$mobile} {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@mixin vertical-center-flip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: wrap-reverse row-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  flex-flow: wrap-reverse row-reverse;
+}
+
+@mixin cool-title-border-thing {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 7.5em;
+    top: 50%;
+    height: 2px;
+    width: 6.8em;
+    background: lighten($black, 68%);
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 14.3em;
+    top: 50%;
+    height: 10px;
+    width: 2px;
+    background: lighten($black, 68%);
+  }
+  &:before, &:after {
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}
+
+// color.scss
+// ----------
+{% include scss/color.scss %}
+
+// Transitions
+// ----------
+{% include scss/transitions.scss %}
+
+// Okay, now it's for reals
+// ----------
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+section {
+  clear: both;
+  overflow: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+// Typography
+// ----------
+{% include scss/type.scss %}
+
+// Major page components
+// ----------
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  padding: 1em 2em;
+  background: $blue;
+  color: $white;
+  text-decoration: none !important;
+  font-size: 0.88em;
+  transition: background 250ms ease, box-shadow 250ms $snap;
+  &:hover {
+    box-shadow: 6px 6px 0px 0px rgba(black, 0.26);
+  }
+  &:active {
+    box-shadow: -6px -6px 0px 0px rgba(black, 0.26);
+  }
+  &.green {
+    background: $green;
+    &:hover {
+      box-shadow: 6px 6px 0px 0px rgba($purple, 0.26);
+    }
+    &:active {
+      box-shadow: -6px -6px 0px 0px rgba($orange, 0.26);
+    }
+  }
+  &.orange {
+    background: $orange;
+    &:hover {
+      box-shadow: 6px 6px 0px 0px rgba($green, 0.26);
+    }
+    &:active {
+      box-shadow: -6px -6px 0px 0px rgba($purple, 0.26);
+    }
+  }
+  &.purple {
+    background: $purple;
+    &:hover {
+      box-shadow: 6px 6px 0px 0px rgba($green, 0.26);
+    }
+    &:active {
+      box-shadow: -6px -6px 0px 0px rgba($orange, 0.26);
+    }
+  }
+  &.dark-blue {
+    background: $dark-blue;
+    &:hover {
+      box-shadow: 6px 6px 0px 0px rgba($darker-blue, 0.26);
+    }
+    &:active {
+      box-shadow: -6px -6px 0px 0px rgba($darkest-blue, 0.26);
+    }
+  }
+}
+
+.fancy-link {
+  position: relative;
+  display: inline-block;
+  padding: 1em;
+  transition: 300ms $snap;
+  font-weight: 700;
+  &::before {
+    content: '>';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 300ms $snap;
+  }
+  &:hover {
+    box-shadow: inset 6.8em 0 0 rgba($orange, 0.16);
+    &::before {
+      right: 100%;
+      right: calc(100% + 1em);
+    }
+  }
+}
+
+// Nav
+// ----------
+nav.nav {
+  position: fixed;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  background: $white;
+  z-index: 2;
+  transition: 500ms $snap;
+  h3 {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #ccc;
+    margin-bottom: 2.618rem;
+    @media #{$mobile} {
+      margin-bottom: 1rem;
+    }
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 1.618rem;
+      height: 1px;
+      background: #ddd;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+  }
+  a {
+    transition: 200ms ease;
+    color: lighten($black, 26%);
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 0.618em;
+      width: 0.618em;
+      background-image: url('{{'/assets/img/icons/lil-arrow-right.svg' | relative_url}}');
+      background-size: 0.618em;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-left: 0.6em;
+      opacity: 0;
+      transition: 1s $ease-in;
+    }
+    &:hover {
+      padding-left: 6px;
+      box-shadow: inset 0px -0.26em 0px 0px rgba($orange, 0.42);
+      color: $dark-black;
+      &:after {
+        margin-left: 1em;
+        opacity: 1;
+      }
+    }
+  }
+  .nav-links {
+    list-style-type: none !important;
+    padding: 0 !important;
+    .nav-link {
+      display: block;
+      margin: 0 auto 2.618rem;
+      a {
+        text-decoration: none;
+        font-size: 2em;
+        margin: 0;
+        font-weight: 300;
+        @media #{$mobile} {
+          font-size: 1.2em;
+        }
+      }
+      @media #{$mobile} {
+        margin-bottom: 1.618rem;
+      }
+    }
+  }
+  .adaptiva-links {
+    list-style-type: none;
+    padding: 0 !important;
+    .adaptiva-link {
+      display: block;
+      margin-bottom: 1rem;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  &.expanded {
+    height: 100%;
+    padding-top: 100px;
+  }
+  @media #{$mobile} {
+    overflow: auto;
+  }
+}
+
+// Navbar
+// ----------
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(white, 0);
+    z-index: 2;
+    transition: background 250ms, box-shadow 300ms $easy-ease;
+    .content {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      .logo {
+        width: 110px;
+        height: 29px;
+        .cls-1 {
+          transition: fill 400ms ease;
+        }
+        @media #{$mobile}{
+          width: 68px;
+          height: 18px;
+        }
+      }
+      @media #{$mobile} {
+        padding: 0 20px;
+      }
+    }
+    &.onscroll,
+    &.nav-activated {
+      background: $white;
+      polygon.cls-1 {
+        fill: $blue;
+      }
+      path.cls-1 {
+        fill: lighten($black, 42%);
+      }
+    }
+    &.onscroll {
+      background-color: rgba(white, 1);
+      box-shadow: 0px 4px 0px 0px rgba(black, 0.05);
+      &.nav-activated {
+        box-shadow: none;
+      }
+      @media #{$mobile} {
+        box-shadow: none;
+      }
+      .hanbaaga {
+        span {
+          background: $dark-black;
+        }
+      }
+    }
+    @media #{$mobile} {
+      background: $white;
+      .logo {
+        @media #{$mobile} {
+          polygon.cls-1 {
+            fill: $blue;
+          }
+          path.cls-1 {
+            fill: lighten($black, 42%);
+          }
+        }
+      }
+    }
+    @media #{$mobile} {
+      height: 50px;
+    }
+  }
+
+.header {
+  margin: 0;
+  position: relative;
+  &.header-guidelines {
+    height: 6vw;
+    min-height: 300px;
+    background-image: radial-gradient(circle farthest-side at right top, $purple, $red 125%);
+    @include vertical-center;
+    text-align: center;
+    h1 {
+      color: $white;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      text-align: left;
+      @media #{$mobile} {
+        padding: 20px;
+      }
+    }
+    @media #{$mobile} {
+      height: auto;
+    }
+  }
+  @media #{$mobile} {
+    padding-top: 50px;
+  }
+}
+
+// Hamburger Menu
+// ----------
+.hanbaaga {
+  display: block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  z-index: 4;
+  cursor: pointer;
+  span { // Lines
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 16px;
+    background: $dark-black;
+    &:first-child { // Top Line
+      top: 4px;
+      transition: 200ms ease-in-out, background 200ms linear;
+    }
+    &:last-child { // Bottom Line
+      bottom: 4px;
+      right: 0;
+      width: 12px;
+      transition: width 300ms $snap-pop, transform 250ms ease-in-out, background 200ms linear;
+    }
+  }
+  &:hover {
+    span {
+      background: $blue;
+    }
+  }
+  &.active-baaga {
+    span {
+      &:first-child {
+        top: 6px;
+        transform: rotate(-135deg);
+      }
+      &:last-child {
+        bottom: 8px;
+        transform: rotate(135deg);
+        width: 16px;
+      }
+    }
+    &:hover {
+      span {
+        background-color: $red;
+      }
+    }
+  }
+}
+
+.ondark {
+  .hanbaaga {
+    span {
+      background: $white;
+      @media #{$mobile} {
+        background: $dark-black;
+      }
+    }
+    &:hover {
+      span {
+        background: rgba($white, 0.68);
+      }
+    }
+    &.active-baaga {
+      span {
+        background: $dark-black;
+      }
+      &:hover {
+        span {
+          background: $red;
+        }
+      }
+    }
+  }
+  @media #{$mobile} {
+    .hanbaaga {
+      span {
+        background: $dark-black;
+      }
+      &:hover {
+        span {
+          background: $dark-black;
+        }
+      }
+    }
+  }
+  &.onscroll {
+    .hanbaaga {
+      &:hover {
+        span {
+          background: $dark-black;
+        }
+      }
+      &.active-baaga {
+        &:hover {
+          span {
+            background: $red;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Homepage
+// ----------
+{% include scss/homepage.scss %}
+
+// Responsive Video Embed
+// ----------
+
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 60px;
+  overflow: hidden;
+  margin: 2.618em 0;
+  embed,
+  iframe,
+  object {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Easy Slider
+// ----------
+
+.slider {
+  width: 100%;
+  position: relative;
+  cursor: -webkit-grab;
+  overflow: auto;
+  user-select: none;
+  margin: 68px 0;
+  &::-webkit-scrollbar,
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+
+.slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  .photo {
+    width: 600px;
+    float: left;
+    margin-right: 20px;
+    &.vertical {
+      width: 400px;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+}
+
+// Site Footer
+// ----------
+footer.site-footer {
+  width: 100%;
+  padding: 6vw 10px;
+  overflow: hidden;
+  background: $dark-black;
+  margin-top: 11em;
+  position: relative;
+  p {
+    color: $white;
+    margin: 0;
+    padding: 0;
+  }
+  &::before {
+    background: $white;
+    bottom: 100%;
+    left: 0;
+    content: '';
+    height: 110px;
+    position: absolute;
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: skewy(1.618deg);
+    transform: skewy(1.618deg);
+    width: 100%;
+    z-index: 1;
+  }
+  h4 {
+    color: lighten($black, 16%);
+    margin-top: 0;
+    padding: 0;
+  }
+  svg {
+    margin-bottom: 1.618rem;
+    @media #{$mobile} {
+      max-width: 178px;
+    }
+  }
+  @media #{$mobile} {
+    padding: 42px 20px 20px;
+  }
+}
+
+.footer-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    padding: 0;
+    margin-bottom: 1em;
+    a {
+      color: rgba($white, 0.68);
+      transition: 250ms $snap;
+      &:hover {
+        color: $dark-black;
+        box-shadow: inset 0 -1.618em 0 0 $yellow;
+      }
+    }
+  }
+}
+
+// Blog Page
+// ----------
+{% include scss/blog.scss %}
+
+// Brand Guidelines
+// ----------
+{% include scss/guidelines.scss %}
+
+// Brand Assets
+// ----------
+{% include scss/assets.scss %}
+
+// About Page
+// ----------
+{% include scss/about.scss %}
+
+// Page Specific Overrides
+// ----------
+{% include scss/page-level-overrides.scss %}

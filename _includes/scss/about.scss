@@ -1,0 +1,273 @@
+header.header-about {
+  height: auto;
+  min-height: 400px;
+  position: relative;
+  margin-bottom: 68px;
+  .content {
+    padding-top: 260px;
+    overflow: hidden;
+    .j-row {
+      overflow: visible;
+      .about-title {
+        h1 {
+          color: $dark-black;
+          margin-bottom: 4.2rem;
+          @media #{$mobile} {
+            margin-bottom: 1.618rem;
+          }
+        }
+        p {
+          max-width: 640px;
+          @media #{$mobile} {
+            color: $white;
+          }
+        }
+      }
+      .about-img {
+        overflow: visible;
+        img {
+          display: block;
+          max-width: 100%;
+          box-shadow: -10px -10px 0 0 $yellow;
+        }
+        @media #{$mobile} {
+          margin-top: 2.618rem;;
+        }
+      }
+    }
+    @media #{$mobile} {
+      padding: 20px 0;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    height: 100%;
+    max-height: 400px;
+    width: 75%;
+    min-width: 1180px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $purple;
+    z-index: -1;
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+  @media #{$mobile} {
+    height: auto;
+    background: $purple;
+    margin-bottom: 0 !important;
+    h1 {
+      color: $white;
+    }
+  }
+}
+
+section.about {
+  padding: 2.618em 0 0;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  @media #{$mobile} {
+    padding: 2.618em 0;
+  }
+}
+section.leadership {
+  padding: 2.6em 0;
+  position: relative;
+  .content {
+    position: relative;
+    height: 100%;
+    .leadership-title {
+      padding: 1.618em;
+      background-color: $red;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      h2 {
+        font-size: 2.618rem;
+        @include cool-title-border-thing;
+        @media #{$mobile} {
+          margin: 0;
+        }
+      }
+      @media #{$mobile} {
+        position: static;
+        background: transparent;
+      }
+    }
+    .leadership-bios {
+      padding-top: 17.8em;
+      position: relative;
+      z-index: 1;
+      .j-row {
+        overflow: visible;
+        @include vertical-center;
+        align-items: flex-start;
+        margin-bottom: 6.8em;
+        .leadership-photo {
+          position: relative;
+          .leadership-photo-wrap {
+            display: block;
+            width: 178px;
+            height: 178px;
+            margin: 0 auto;
+            position: relative;
+            img {
+              display: block;
+              width: 100%;
+              border-radius: 50%;
+            }
+          }
+          &.jesse {
+            .leadership-photo-wrap {
+              &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 42px;
+                width: 42px;
+                top: 0;
+                left: 0;
+                background-image: url('{{"/assets/img/icons/dot-pattern.svg" | relative_url}}');
+                background-size: cover;
+                background-repeat: no-repeat;
+                z-index: 2;
+                transition: 500ms $snap;
+              }
+              &::after {
+                content: '';
+                display: block;
+                background-color: $yellow;
+                background-image: radial-gradient(circle farthest-side at right top, $red, $yellow 150%);
+                position: absolute;
+                height: 90%;
+                width: 90%;
+                bottom: -10px;
+                right: -10px;
+                z-index: -1;
+                transition: 500ms $snap;
+              }
+              &:hover {
+                &::before {
+                  left: 75%;
+                }
+                &::after {
+                  right: 25%;
+                }
+              }
+            }
+          }
+          &.adam {
+            .leadership-photo-wrap {
+              &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                height: 42px;
+                width: 42px;
+                bottom: 0;
+                right: 0;
+                background-image: url('{{"/assets/img/icons/squiggly-pattern.svg" | relative_url}}');
+                background-size: cover;
+                background-repeat: no-repeat;
+                z-index: 2;
+                transition: 500ms $snap;
+              }
+              &::after {
+                content: '';
+                display: block;
+                background-color: $purple;
+                background-image: radial-gradient(circle farthest-side at left bottom, $red, $purple 150%);
+                position: absolute;
+                height: 90%;
+                width: 90%;
+                top: -10px;
+                left: -10px;
+                z-index: -1;
+                transition: 500ms $snap;
+              }
+              &:hover {
+                &::before {
+                  right: 75%;
+                }
+                &::after {
+                  left: 25%;
+                }
+              }
+              img {
+                margin-bottom: 0;
+              }
+            }
+          }
+          @media #{$mobile} {
+            margin-bottom: 2.618em;
+          }
+        }
+        div.leadership-bio {
+          h2 {
+            margin-top: 0;
+            padding: 0;
+          }
+          h3 {
+            color: lighten($black, 42%);
+            font-size: 1.2rem;
+            margin-top: 0;
+            @media #{$mobile} {
+              color: rgba($white, 0.42);
+            }
+          }
+          p {
+            margin: 0;
+            padding: 0;
+          }
+          ul.bio-links {
+            list-style-type: none;
+            padding: 0;
+            -webkit-padding-start: 0 !important;
+            width: 100%;
+            border-top: 4px solid $yellow;
+            .bio-link {
+              display: inline-block;
+              a {
+                display: block;
+                color: $red;
+                transition: 400ms $snap;
+                padding: 0.6em 1em;
+                &:hover {
+                  box-shadow: inset 0 -2.9em 0 0 $yellow;
+                  color: $dark-black;
+                }
+                @media #{$mobile} {
+                  color: $white;
+                }
+              }
+            }
+          }
+          &.adam {
+            ul.bio-links {
+              border-color: $purple;
+              .bio-link {
+                a:hover {
+                  box-shadow: inset 0px -2.9em 0 0 $purple;
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+      @media #{$mobile} {
+        padding-top: 0;
+      }
+    }
+  }
+  @media #{$mobile} {
+    padding: 0;
+    background: $red;
+  }
+}

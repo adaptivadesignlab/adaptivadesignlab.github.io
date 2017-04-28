@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<header class="post-hero" style="background-image: url('{{site.baseurl}}/assets/img/posts/{{page.image}}');">
+    <div class="content">
+      <div class="post-title j-col j-col-8">
+        <h1>{{page.title}}</h1>
+        <div class="post-meta">
+          <span class="post-date">{{page.posted}} by</span> <span class="post-author"><a href="{{site.baseurl}}/about/{{page.author_link_ext}}">{{page.author}}</a></span>
+        </div>
+      </div>
+    </div>
+</header>
+<section class="post-content">
+  <div class="content">
+    <a href="{{"/blog" | relative_url}}" class="back-link"><span>All posts</span></a>
+    {{content}}
+    {% include author-meta.html %}
+  </div>
+</section>
+<section class="post-nav">
+  <div class="content">
+  {% if page.previous.url %}
+    <a class="previous" href="{{page.previous.url}}"><div class="post-nav-arrow">{% include svg/lil-arrow-left.svg %}</div> &nbsp; {{page.previous.title}}</a>
+    {% else %}
+    <div><!-- Filler div! * does jazz hands * --></div>
+  {% endif %}
+  {% if page.next.url %}
+    <a class="next" href="{{page.next.url}}">{{page.next.title}} &nbsp; <div class="post-nav-arrow">{% include svg/lil-arrow-right.svg %}</div></a>
+    {% else %}
+    <div><!-- Filler div! * does jazz hands * --></div>
+  {% endif %}
+</div>
+</section>

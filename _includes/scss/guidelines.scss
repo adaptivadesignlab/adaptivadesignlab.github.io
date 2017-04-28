@@ -1,0 +1,225 @@
+// Brand Guidlines
+
+.guideline-entry {
+  padding-top: 42px;
+  .content {
+    position: relative;
+    overflow: hidden;
+    .guidelines-content {
+      float: left;
+      width: 66.67%;
+      width: calc(100% / 3 * 2);
+      padding-left: 20px;
+      ul {
+        list-style-type: square;
+      }
+      li {
+        margin-bottom: 1em;
+      }
+      @media #{$mobile} {
+        width: 100%;
+        float: none;
+        padding: 20px;
+      }
+      @media #{$tablet} {
+        width: 100%;
+        float: none;
+        padding: 20px;
+      }
+      @media #{$desktop} {
+        min-height: 30vh;
+      }
+      @media #{$desktop-xl} {
+        min-height: 42vh;
+      }
+    }
+  }
+  @media #{$mobile} {
+    padding: 0;
+  }
+}
+
+h3.guideline-nav-header {
+  margin: 0;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  background: rgba($black, 0.2);
+  &::after {
+    content: '-';
+    color: #999;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    transition: 250ms ease;
+    font-weight: 300;
+  }
+  &.collapse {
+    &::after {
+      content: '+';
+    }
+  }
+  &:hover {
+    background: rgba($black, 0.16);
+    &::after {
+      color: $black;
+    }
+  }
+  @media #{$mobile} {
+    &::after {
+      content: '+';
+    }
+    &.collapse {
+      &::after {
+        content: '-';
+      }
+    }
+  }
+}
+
+.guidelines-nav {
+  position: absolute;
+  top: 0;
+  float: left;
+  width: 33.33%;
+  width: calc(100% / 3);
+  padding-right: 20px;
+  ul.guidelines-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    background: rgba($black, 0.1);
+    max-height: 999px;
+    overflow: hidden;
+    transition: 250ms $snap;
+    li.guidelines-item {
+      margin: 0;
+      overflow: hidden;
+      a {
+        display: block;
+        padding: 10px;
+        transition: background 250ms ease;
+        text-decoration: none;
+        color: $dark-black;
+        &:hover {
+          background: rgba($purple, 0.26);
+        }
+        &.current {
+          background: $purple;
+          color: $white;
+        }
+      }
+    }
+    &.collapse {
+      max-height: 0px;
+    }
+    @media #{$mobile} {
+      max-height: 0px;
+      &.collapse {
+        max-height: 999px;
+      }
+    }
+  }
+  &.sticky {
+    @media screen and (min-width: 1200px) {
+      position: fixed;
+      top: 116px;
+      max-width: 400px;
+    }
+  }
+  @media screen and (max-height: 899px) {
+    h3.guideline-nav-header {
+      &::after {
+        content: '+' !important;
+      }
+      &.collapse {
+        &::after {
+          content: '-' !important;
+        }
+      }
+    }
+    ul.guidelines-list {
+      max-height: 0 !important;
+      &.collapse {
+        max-height: 999px !important;
+      }
+    }
+  }
+  @media #{$mobile} {
+    position: static;
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none;
+    padding: 0;
+  }
+}
+
+// Colors
+.colors {
+  overflow: hidden;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: $light-gray;
+  margin: 1.618em 0;
+  @media #{$mobile} {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .color {
+    margin: 1.618em 0;
+    .color-sample {
+      height: 110px;
+      width: 110px;
+      margin: 0;
+    }
+    .color-meta {
+      padding-top: 10px;
+      h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+      p {
+        font-family: monospace;
+        margin: 0;
+      }
+    }
+  }
+  .gradient {
+    margin-bottom: 1.618em;
+    .gradient-sample {
+      width: 100%;
+      height: 240px;
+      margin: 20px 0;
+    }
+    .gradient-meta > code {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Typography
+
+.wrap.type {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 2px solid $light-gray;
+}

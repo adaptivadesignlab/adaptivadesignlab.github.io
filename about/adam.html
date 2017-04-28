@@ -1,0 +1,37 @@
+---
+title: Adam Haney
+layout: default
+bodyclass: about-pages
+---
+<header class="header header-about">
+  <div class="content">
+    <div class="j-row">
+      <div class="j-col j-col-3 about-img">
+        <img src="{{"/assets/img/adam-haney.jpg" | relative_url}}" alt="{{page.title}}">
+      </div>
+      <div class="j-col j-col-9 about-title">
+        <h1>{{page.title}}</h1>
+        <p>What's up, I'm Adam. I specialize in video production, photography, and print design. Unfortunately that means I have to deal with all the PSB files.</p>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="blog-posts">
+  <div class="content">
+    <h2 class="push-3">Blog posts by {{page.title}}</h2>
+  </div>
+    <ul class="blog-post-list">
+      {% for post in site.posts %}
+      {% if post.author == 'Adam Haney' %}
+      <li class="blog-post">
+        <a title="{{post.title}}" href="{{post.url | relative_url}}" class="j-row ">
+          <div cl<div class="content">
+            <h3 class="blog-post-title j-col j-col-6">{{post.title}}</h3>
+            <p class="blog-post-excerpt j-col j-col-6">{{post.meta}}<br><span class="post-date">{{post.posted}}</span> <span class="post-author">by {{post.author}}</span></p>
+          </div>
+        </a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+</section>

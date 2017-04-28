@@ -1,0 +1,35 @@
+- title: 'Small'
+  font-weight: '500'
+  font-size: '6px / 10px'
+  scale: '0.618em'
+
+- title: 'Body'
+  font-weight: '500'
+  font-size: '10px / 16px'
+  scale: '1em'
+
+- title: 'Heading 4'
+  font-weight: '700'
+  font-size: '10px / 16px'
+  scale: '1em'
+
+- title: 'Heading 3*'
+  font-weight: '700'
+  font-size: '12px / 20px'
+  scale: '1.25em'
+
+- title: 'Heading 2'
+  font-weight: '300'
+  font-size: '16px / 26px'
+  scale: '1.618em'
+
+- title: 'Heading 1 (Title)'
+  font-weight: '300'
+  font-size: '26px / 42px'
+  scale: '2.618em'
+
+- title: 'Giant'
+  font-weight: 'Depends'
+  display-weight: '500'
+  font-size: '42px / 68px'
+  scale: '4.236em'

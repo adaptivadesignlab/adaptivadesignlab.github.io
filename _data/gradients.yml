@@ -1,0 +1,19 @@
+- title: Primary Blue Gradient
+  start: '#0860b8'
+  end: '#052b55'
+
+- title: Orange and Red Gradient
+  start: '#ff902c'
+  end: '#ed4e39'
+
+- title: Green Gradient
+  start: '#4dcf83'
+  end: '#2cb566'
+
+- title: Yellow to Orange Gradient
+  start: '#f9ef3b'
+  end: '#ff902c'
+
+- title: Yellow to Red Gradient
+  start: '#f9ef3b'
+  end: '#ed4e39'

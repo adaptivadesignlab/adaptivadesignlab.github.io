@@ -1,0 +1,38 @@
+---
+title: Jesse Rogers
+layout: default
+bodyclass: about-pages
+---
+<header class="header header-about">
+  <div class="content">
+    <div class="j-row">
+      <div class="j-col j-col-3 about-img">
+        <img src="{{"/assets/img/jesse-rogers.jpg" | relative_url}}" alt="{{page.title}}">
+      </div>
+      <div class="j-col j-col-9 about-title">
+        <h1>{{page.title}}</h1>
+        <p>I oversee pretty much everything creative-ish at Adaptiva. Visual design, print design, web design, web development, web dev ops, illustration, video production, animation, and oh my god whatever else.</p>
+        <p>After discovering that professional PokeMon Card playing was less lucrative than I'd hoped, I started my creative career at 18, securing multiple Fortune 500 accounts as a freelance photographer and designer. In 2014, I accepted a position at Adaptiva and went on to become the Creative Director, overseeing all the multimedia needs of Adaptiva's marketing department and eventually forming the Adaptiva Design Lab to serve the whole company.</p>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="blog-posts">
+  <div class="content">
+    <h2 class="push-3">Blog posts by {{page.title}}</h2>
+  </div>
+    <ul class="blog-post-list">
+      {% for post in site.posts %}
+      {% if post.author == 'Jesse Rogers' %}
+      <li class="blog-post">
+        <a title="{{post.title}}" href="{{post.url | relative_url}}" class="j-row">
+          <div cl<div class="content">
+            <h3 class="blog-post-title j-col j-col-6">{{post.title}}</h3>
+            <p class="blog-post-excerpt j-col j-col-6">{{post.meta}}<br><span class="post-date">{{post.posted}}</span> <span class="post-author">by {{post.author}}</span></p>
+          </div>
+        </a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+</section>

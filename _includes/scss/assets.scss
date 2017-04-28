@@ -1,0 +1,89 @@
+header.header-assets {
+  height: 10vw;
+  min-height: 500px;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 68%;
+    min-width: 1180px;
+    height: 100%;
+    background: $darkest-blue;
+    z-index: -1;
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+  .content {
+    overflow: hidden;
+  }
+  h1 {
+    color: $white;
+  }
+  p {
+    color: lighten($blue, 50%);
+  }
+  @media #{$mobile} {
+    background-color: $darkest-blue;
+    height: auto;
+    min-height: inherit;
+  }
+}
+
+.assets-page-title {
+  margin-top: 240px;
+  @media #{$mobile} {
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+section.brand-assets {
+  padding-top: 68px;
+  h2 {
+    margin: 1em 0 2.6em;
+  }
+  h4 {
+    color: lighten($black, 26%);
+    font-weight: normal;
+  }
+  .j-col-6 {
+    margin-bottom: 68px;
+  }
+  .button {
+    margin-bottom: 68px;
+  }
+  @media #{$mobile} {
+    padding-top: 26px;
+  }
+}
+.asset {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: block;
+  overflow: hidden;
+  &.dark {
+    background-color: $dark-black;
+  }
+  &.icon {
+    text-align: center;
+    img {
+      max-width: 110px;
+    }
+  }
+}
+
+.file-type {
+  display: inline-block;
+  padding: 6px 16px;
+  margin: 0 10px 10px 0;
+  background-color: rgba($blue, 0.1);
+  color: $blue;
+  transition: 300ms ease;
+  &:hover {
+    background-color: rgba($blue, 0.26);
+  }
+}
