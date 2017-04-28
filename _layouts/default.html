@@ -19,7 +19,8 @@
     {% include footer.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     {% if page.typekit %}
-    <script></script>
+    <script src="https://use.typekit.net/fqk2oeo.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     {% endif %}
     <script type="text/javascript" src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
