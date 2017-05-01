@@ -1,0 +1,185 @@
+---
+---
+* {
+  box-sizing: border-box;
+}
+
+// Breakpoints
+// ----------
+{% include scss/breakpoints.scss %}
+
+// Mixins
+// ----------
+@mixin vertical-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  @media #{$mobile} {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@mixin vertical-center-flip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: wrap-reverse row-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  flex-flow: wrap-reverse row-reverse;
+}
+
+@mixin cool-title-border-thing {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 7.5em;
+    top: 50%;
+    height: 2px;
+    width: 6.8em;
+    background: lighten($black, 68%);
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 14.3em;
+    top: 50%;
+    height: 10px;
+    width: 2px;
+    background: lighten($black, 68%);
+  }
+  &:before, &:after {
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}
+
+// color.scss
+// ----------
+{% include scss/color.scss %}
+
+// Transitions
+// ----------
+{% include scss/transitions.scss %}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+div,
+span,
+li {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  padding: 6vw 20px;
+  background-color: $darkest-blue;
+  @include vertical-center;
+  h1 {
+    color: $white;
+  }
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
+.pacman-scores {
+  padding-top: 2.618em;
+}
+.pacman-score {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid $light-gray;
+}
+.player,
+.score,
+.rank {
+  float: left;
+}
+.player {
+  width: 50%;
+}
+.score {
+  width: 25%;
+}
+.rank {
+  width: 25%;
+  text-align: right;
+}
+.label {
+  font-family: monospace;
+  color: darken($gray, 10%);
+}
+.player-name,
+.score-value,
+.rank-value {
+  font-size: 1.6em;
+  @media #{$mobile} {
+    font-size: 1.2em;
+  }
+}
+.score-value,
+.rank-value {
+  font-family: monospace;
+}
+
+.champion {
+  border: none;
+  background: $blue;
+  box-shadow: 6px 6px 0 0 rgba($orange, 0.26);
+  position: relative;
+  .player-name,
+  .score-value,
+  .rank-value {
+    color: $white;
+  }
+  .label {
+    color: lighten($blue, 42%);
+  }
+  &::before {
+    content: '';
+    background-image: url('{{'/assets/img/trophy.svg' | relative_url}}');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    right: 100%;
+    right: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
