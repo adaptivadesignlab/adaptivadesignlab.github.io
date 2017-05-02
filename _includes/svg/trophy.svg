@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 383.02 488">
+  <defs>
+    <style>
+      .cls-1{fill:none;}.cls-2{fill:#ffa656;}.cls-3{fill:#ed4e39;}.cls-4{fill:url(#linear-gradient);}.cls-5{fill:url(#linear-gradient-2);}.cls-6{fill:url(#linear-gradient-3);}.cls-7{clip-path:url(#clip-path);}.cls-8{clip-path:url(#clip-path-2);}.cls-9{fill:url(#linear-gradient-4);}.cls-10{fill:url(#linear-gradient-5);}.cls-11{fill:url(#linear-gradient-6);}.cls-12{fill:url(#linear-gradient-7);}.cls-13{fill:#ff902c;}.cls-14{fill:#fff;}
+    </style>
+    <linearGradient id="linear-gradient" x1="191.51" y1="296" x2="191.51" y2="264" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff902c"/>
+      <stop offset="1" stop-color="#ed4e39"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="31.51" y1="16" x2="351.51" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffa656"/>
+      <stop offset="1" stop-color="#ed4e39"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="191.51" y1="32" x2="191.51" y2="280" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path">
+      <path class="cls-1" d="M147.33 246.43l.28.15.25.13a4 4 0 0 1-3.68 7.1l-.3-.15z"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path class="cls-1" d="M59.52 120.34V120a4 4 0 1 1 8-.28v.6z"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-4" x1="167.51" y1="304" x2="215.51" y2="304" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-5" x1="191.51" y1="312" x2="191.51" y2="408" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="191.51" y1="408" x2="191.51" y2="488" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="147.51" y1="404" x2="235.51" y2="492" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>
+    trophy
+  </title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path class="cls-2" d="M40.57 196.75l-6.71-13.42-.11.06c.39-.21 9.46-5.33 9.46-20.35 0-4.29-8.37-15-15.1-23.7-9-11.6-19.24-24.74-24.52-38.42-6.72-17.42-4-32.37 8.07-44.44 8.8-8.8 16.58-8.76 21.55-7.18C50.5 54.8 57 87.73 58.1 94.27a7.5 7.5 0 0 1-14.78 2.54c-2.47-14.29-9.1-31.45-14.65-33.21-2-.64-5.14 2.23-6.4 3.49-16.34 16.34-2.33 37.31 17.69 63 10.2 13.12 18.26 23.47 18.26 32.91-.01 24.64-16.93 33.39-17.65 33.75z"/>
+      <path class="cls-3" d="M342.46 196.75c-.72-.36-17.65-9.11-17.65-33.71 0-9.43 8.06-19.79 18.26-32.91 20-25.73 34-46.7 17.69-63-1.26-1.26-4.41-4.13-6.4-3.49-5.56 1.76-12.18 18.92-14.65 33.21a7.5 7.5 0 0 1-14.78-2.54c1.12-6.54 7.6-39.47 24.89-45 5-1.58 12.75-1.62 21.55 7.18 12.07 12.07 14.78 27 8.07 44.44-5.28 13.68-15.5 26.82-24.52 38.42-6.73 8.65-15.1 19.41-15.1 23.7 0 15 9.08 20.14 9.46 20.35l-.11-.06z"/>
+      <path class="cls-4" d="M135.51 264h112a32 32 0 0 1-32 32h-48a32 32 0 0 1-32-32z"/>
+      <path class="cls-5" d="M31.51 0h320v32h-320z"/>
+      <path class="cls-3" d="M319.51 0h32v32h-32z"/>
+      <path class="cls-6" d="M47.51 32h288v104a144 144 0 0 1-144 144 144 144 0 0 1-144-144V32z"/>
+      <image width="20" height="16" transform="translate(142.51 246)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAAAZklEQVQ4T63RsRHAIAxDUdbKEuy/BDOYypyTAJIMxS/g8CtwMbPitfqYF++VXocIZuEtloFpkIUljIHT4Ao+wmbwNdCTl4L6fSoa2DWWMgsNy6AKj6UgkEUlEMHxDUQY+BiM8PeuA9O+Yd7/11UFAAAAAElFTkSuQmCC" class="cls-7"/>
+      <image width="89" height="134" transform="translate(59.51 120)" xlink:href="data:image/png;base64,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"/>
+      <image width="10" height="18" transform="translate(58.51 104)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAASCAYAAABit09LAAAACXBIWXMAAAsSAAALEgHS3X78AAAAKklEQVQoU2P4P0HnP0H8/z8DA0FFowoJ4lGFhBUCCYIKgRih8D+UjQMDAIbb8aYzls7jAAAAAElFTkSuQmCC" class="cls-8"/>
+      <path class="cls-3" d="M319.51 32v104a144 144 0 0 1-136 143.78c2.65.15 5.31.22 8 .22a144 144 0 0 0 144-144V32z"/>
+      <path class="cls-9" d="M167.51 296h48v16h-48z"/>
+      <path class="cls-10" d="M223.51 408h-64l16-96h32l16 96z"/>
+      <path class="cls-11" d="M111.51 408h160v80h-160z"/>
+      <path class="cls-3" d="M119.51 416h144v64h-144z"/>
+      <path class="cls-12" d="M127.51 424h128v48h-128z"/>
+      <path class="cls-3" d="M47.51 32h288v8h-288zm161.33 288l-1.33-8h-32l-1.33 8h34.66z"/>
+      <path class="cls-13" d="M180.2 472h22.62l-48-48H132.2l48 48zm46.11 0h13.2l-48-48h-13.2l48 48z"/>
+      <circle class="cls-3" cx="251.51" cy="428" r="2"/>
+      <circle class="cls-3" cx="251.51" cy="468" r="2"/>
+      <circle class="cls-3" cx="131.2" cy="428" r="2"/>
+      <circle class="cls-3" cx="131.2" cy="468" r="2"/>
+      <path class="cls-3" d="M151.51 400h80v8h-80zm43.71-248l44.29-26.58a51.71 51.71 0 1 0 0 53.15z"/>
+      <path class="cls-14" d="M149.6 443.09a3.68 3.68 0 0 1 2.57.81 3 3 0 0 1 1 2.38 3.15 3.15 0 0 1-.84 2.31 3.34 3.34 0 0 1-2.5.87h-1.43v3.44h-2.27v-9.81zm-1.19 4.52h.81a1.73 1.73 0 0 0 1.22-.37 1.37 1.37 0 0 0 .37-1 1.29 1.29 0 0 0-.37-1 1.77 1.77 0 0 0-1.26-.37h-.76zm12.5 3.44h-3.71l-.75 1.85h-2.35l4-9.81h2.07l3.87 9.81h-2.35zm-.62-1.74l-1.21-3.31-1.22 3.29zm13.07 3.29a4.56 4.56 0 0 1-2.16.53 5.26 5.26 0 0 1-3.85-1.43 5.26 5.26 0 0 1 0-7.41 5.21 5.21 0 0 1 3.66-1.41 5.84 5.84 0 0 1 2.35.54V446a3.11 3.11 0 0 0-2.29-1 2.75 2.75 0 0 0-2 .76 3.14 3.14 0 0 0-.93 2.27 2.87 2.87 0 0 0 3 3 3.09 3.09 0 0 0 2.25-1zm15.27 0a4.56 4.56 0 0 1-2.16.53 5.26 5.26 0 0 1-3.85-1.43 5.26 5.26 0 0 1 0-7.41 5.21 5.21 0 0 1 3.66-1.41 5.84 5.84 0 0 1 2.35.54V446a3.11 3.11 0 0 0-2.29-1 2.75 2.75 0 0 0-2 .76 3.14 3.14 0 0 0-.93 2.27 2.87 2.87 0 0 0 3 3 3.09 3.09 0 0 0 2.25-1zm5.54-5.77h3.91v-3.74h2.27v9.81h-2.27v-4.16h-3.91v4.16h-2.27v-9.81h2.27zm15.56 4.22H206l-.75 1.85h-2.35l4-9.81h2.1l3.87 9.81h-2.35zm-.62-1.74l-1.2-3.31-1.22 3.29zm5.83 3.6l1.57-9.81h1.88l2.44 5.87 2.44-5.87h1.88l1.57 9.81h-2.27l-.78-5.85-2.46 5.85h-.79l-2.42-5.86-.78 5.85zm18.41-9.82a3.68 3.68 0 0 1 2.57.81 3 3 0 0 1 1 2.38 3.15 3.15 0 0 1-.84 2.31 3.34 3.34 0 0 1-2.5.87h-1.38v3.44h-2.3v-9.81zm-1.19 4.52h.84a1.73 1.73 0 0 0 1.22-.37 1.37 1.37 0 0 0 .37-1 1.29 1.29 0 0 0-.37-1 1.77 1.77 0 0 0-1.26-.37h-.76z"/>
+    </g>
+  </g>
+</svg>

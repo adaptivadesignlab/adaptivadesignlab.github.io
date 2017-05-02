@@ -14,8 +14,12 @@ layout: pacman
       <div class="score-value">{{game.score}}</div>
     </div>
     <div class="rank">
+      {% if forloop.first == true %}
+      <div style="width: 2.618em; display: inline-block;">{% include svg/trophy.svg %}</div>
+      {% else %}
       <div class="label">Rank</div>
       <div class="rank-value">{{forloop.index}}</div>
+      {% endif %}
     </div>
   </div>
 {% endfor %}
