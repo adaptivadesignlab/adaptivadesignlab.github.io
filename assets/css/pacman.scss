@@ -2,6 +2,7 @@
 ---
 * {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 // Breakpoints
@@ -88,28 +89,166 @@ html {
   font-size: 16px;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-div,
-span,
-li {
-  font-family: 'Poppins', sans-serif;
+a {
+  text-decoration: none !important;
 }
 
-header {
-  padding: 6vw 20px;
+p {
+  color: $dark-black;
+  a {
+    color: $dark-black;
+    border-bottom: 1px solid $yellow;
+    box-shadow: inset 0px -0.42em 0 0 $yellow;
+    transition: box-shadow 400ms $snap;
+    &:hover {
+      box-shadow: inset 0px -1.618em 0 0 $yellow;
+    }
+  }
+}
+
+section.navigation {
+  background-color: $light-gray;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  transition: box-shadow 400ms $easy-ease;
+  &.is-sticky {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 0 0 rgba(black, 0.1);
+  }
+  @media #{$mobile} {
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+    box-shadow: 0 -4px 0 0 rgba(black, 0.1);
+    &.is-sticky {
+      top: auto;
+      box-shadow: 0 -4px 0 0 rgba(black, 0.1);
+    }
+  }
+}
+.nav {
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    -webkit-padding-start: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    li {
+      display: block;
+      float: left;
+      flex-grow: 1;
+      flex-basis: 0;
+      text-align: center;
+      border-right: 2px solid $gray;
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 1em;
+        color: $black;
+        transition: 300ms $easy-ease;
+        svg {
+          .leaderboard-1,
+          .prizes-1,
+          .links-1,
+          .links-2 {
+            transition: fill 400ms $easy-ease;
+          }
+        }
+        &:hover {
+          box-shadow: inset 0 -0.42em 0 0 $orange;
+          svg {
+            .leaderboard-1,
+            .prizes-1,
+            .links-1,
+            .links-2 {
+              fill: $orange;
+            }
+          }
+        }
+        .nav-icon {
+          display: inline-block;
+          width: 0.8em;
+          margin-right: 1em;
+          vertical-align: middle;
+          svg {
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+  @media #{$mobile} {
+    ul {
+      li {
+        a {
+          font-size: 0.6em;
+          padding: 0.8em 0.5em;
+          .nav-icon {
+            display: block;
+            width: auto;
+            max-width: 1.618em;
+            max-height: 1.618em;
+            margin: 0 auto 0.6em;
+          }
+        }
+      }
+    }
+  }
+}
+
+header.header {
   background-color: $darkest-blue;
+  background-image: url('{{'/assets/img/svg/pacman-banner.svg' | relative_url}}');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-content {
+  position: relative;
+  height: 360px;
   @include vertical-center;
   h1 {
     color: $white;
+    font-size: 2.618rem;
   }
   @media #{$mobile} {
     display: block;
     height: auto;
-    padding: 20px;
+    padding: 40px 20px 20px;
+    h1 {
+      font-size: 1.618rem;
+    }
+  }
+}
+
+a.logo {
+  display: block;
+  width: 110px;
+  position: absolute;
+  top: 2.618em;
+  left: 2.618em;
+  @media screen and (max-width: 1024px) {
+    top: 20px;
+    left: 20px;
+    width: 68px;
   }
 }
 
@@ -119,6 +258,9 @@ header {
 }
 .pacman-scores {
   padding-top: 2.618em;
+  @media screen and (max-width: 1024px) {
+    padding: 0;
+  }
 }
 .pacman-score {
   display: flex;
@@ -126,6 +268,11 @@ header {
   align-items: center;
   padding: 20px;
   border-bottom: 2px solid $light-gray;
+  transition: 300ms ease;
+  cursor: default;
+  &:hover {
+    border-color: $gray;
+  }
 }
 .player,
 .score,
@@ -143,25 +290,20 @@ header {
   text-align: right;
 }
 .label {
-  font-family: monospace;
   color: darken($gray, 10%);
+  @media #{$mobile} {
+    font-size: 0.8em;
+  }
 }
 .player-name,
 .score-value,
 .rank-value {
   font-size: 1.4em;
   overflow: hidden;
+  font-weight: 700;
   @media #{$mobile} {
     font-size: 1.2em;
   }
-}
-.score-value,
-.rank-value {
-  font-family: monospace;
-}
-
-.player-name {
-  font-weight: 700;
 }
 
 .champion {
@@ -177,4 +319,29 @@ header {
   .label {
     color: lighten($blue, 42%);
   }
+}
+
+section.prizes {
+  padding: 1.618em 0;
+  .content {
+    overflow: hidden;
+  }
+  @media #{$mobile} {
+    padding: 0;
+  }
+}
+
+.prize-list {
+  width: 100%;
+  max-width: 640px;
+  margin: 2.618em auto;
+  @media #{$mobile} {
+    padding: 0 20px;
+  }
+}
+
+.prize-image {
+  width: 100%;
+  max-width: 960px;
+  margin: 2.618em auto;
 }

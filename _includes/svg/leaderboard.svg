@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25.5">
+  <defs>
+    <style>
+      .leaderboard-1{fill:#222;}
+    </style>
+  </defs>
+  <title>
+    leaderboard
+  </title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <path class="leaderboard-1" d="M25 5H0V0h25zM1 4h23V1H1zm3.5 4h20v1h-20zm0 4h20v1h-20zm0 12h20v1h-20zm0-4h20v1h-20zm0-4h20v1h-20z"/>
+      <circle class="leaderboard-1" cx="1.5" cy="8.5" r="1"/>
+      <circle class="leaderboard-1" cx="1.5" cy="12.5" r="1"/>
+      <circle class="leaderboard-1" cx="1.5" cy="16.5" r="1"/>
+      <circle class="leaderboard-1" cx="1.5" cy="20.5" r="1"/>
+      <circle class="leaderboard-1" cx="1.5" cy="24.5" r="1"/>
+    </g>
+  </g>
+</svg>
