@@ -9,11 +9,12 @@ header.header-about {
     .j-row {
       overflow: visible;
       .about-title {
+        margin: 0;
         h1 {
           color: $dark-black;
           margin-bottom: 4.2rem;
           @media #{$mobile} {
-            margin-bottom: 1.618rem;
+            margin: 0;
           }
         }
         p {
@@ -57,6 +58,7 @@ header.header-about {
   }
   @media #{$mobile} {
     height: auto;
+    min-height: inherit;
     background: $purple;
     margin-bottom: 0 !important;
     h1 {
