@@ -8,7 +8,7 @@ navclass: ondark
 ---
 The Adaptiva logo is the most recognizable part of our brand. It’s our first impression to new customers, so it’s extremely important that we use it correctly.
 
-Head to the [Brand Assets page]({{site.baseurl}}/brand-assets) to download the logo in various formats.
+Head to the [Brand Assets page]({{site.baseurl}}/assets) to download the logo in various formats.
 
 ## Spacing
 
