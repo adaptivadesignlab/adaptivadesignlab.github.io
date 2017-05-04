@@ -12,4 +12,20 @@ jQuery(function($) { //Safety pants!
             $(".prizes").css("padding-top", "");
         }
     });
+    // Padding for mobile nav
+    // media query event handler
+      if (matchMedia) {
+        var mq = window.matchMedia("(max-width: 767px)");
+        var nav = $(".navigation").height(); // get height of nav
+        mq.addListener(WidthChange);
+        WidthChange(mq);
+      }
+      // media query change
+      function WidthChange(mq) {
+        if (mq.matches) { // if width < 768px
+          $("body").css("padding-bottom", nav) // add padding to body to make up for fixed nav
+        } else {
+          $("body").css("padding-bottom", ""); // otherwise, no padding, baby!
+        }
+      }
 });

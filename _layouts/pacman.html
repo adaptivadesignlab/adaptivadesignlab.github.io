@@ -14,16 +14,30 @@
       <div class="header-content">
         <a class="logo" href="{{"/pacman" | relative_url}}">{% include svg/adaptiva-logo-white.svg %}</a>
         <h1>MMS 2017 Pac-Man Championships</h1>
+        <h3>{{page.subtitle}}</h3>
+        {% if page.url == "/pacman/" %}
+        <div><a href="." class="refresh">Update <div class="refresh-icon">{% include svg/refresh.svg %}</div></a></div>
+        {% endif %}
       </div>
     </header>
     <section class="navigation">
       <nav class="nav">
         <ul>
-          {% if page.url != "/pacman/" %}
-          <li><a href="{{"/pacman" | relative_url}}"><div class="nav-icon">{% include svg/leaderboard.svg %}</div><span>Leaderboard</span></a></li>
-          {% endif %}
-          <li><a href="{{"/pacman/prizes" | relative_url}}"><div class="nav-icon">{% include svg/prizes.svg %}</div><span>Prizes</span></a></li>
-          <li><a href="#0"><div class="nav-icon">{% include svg/links.svg %}</div><span>Links</span></a></li>
+          <li>
+            <a {% if page.url == "/pacman/" %}class="current"{% endif %} href="{{"/pacman" | relative_url}}">
+              <div class="nav-icon">{% include svg/leaderboard.svg %}</div><span>Leaderboard</span>
+            </a>
+          </li>
+          <li>
+            <a {% if page.url == "/pacman/prizes/" %}class="current"{% endif %} href="{{"/pacman/prizes" | relative_url}}">
+              <div class="nav-icon">{% include svg/prizes.svg %}</div><span>Prizes</span>
+            </a>
+          </li>
+          <li>
+            <a {% if page.url == "/pacman/links/" %}class="current"{% endif %} href="#0">
+              <div class="nav-icon">{% include svg/links.svg %}</div><span>Links</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </section>
