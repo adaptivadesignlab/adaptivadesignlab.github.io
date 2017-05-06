@@ -34,8 +34,8 @@
             </a>
           </li>
           <li>
-            <a {% if page.url == "/pacman/links/" %}class="current"{% endif %} href="#0">
-              <div class="nav-icon">{% include svg/links.svg %}</div><span>Links</span>
+            <a {% if page.url == "/pacman/info/" %}class="current"{% endif %} href="{{"/pacman/info" | relative_url}}">
+              <div class="nav-icon">{% include svg/info.svg %}</div><span>Info</span>
             </a>
           </li>
         </ul>

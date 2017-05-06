@@ -1,0 +1,31 @@
+---
+layout: pacman
+section_class: pacman
+subtitle: Leaderboard
+---
+<div class="pacman-scores">
+{% assign pacman = (site.data.pacman | sort: 'score' | reverse) %}
+{% for game in pacman %}
+  <div class="pacman-score {% if forloop.first == true %}champion{% endif %}">
+    <div class="player">
+      <div class="label">Player</div>
+      <div class="player-name">{{game.player}}</div>
+    </div>
+    <div class="score">
+      <div class="label">Score</div>
+      <div class="score-value">{{game.score}}</div>
+    </div>
+    <div class="rank">
+      {% if forloop.first == true %}
+      <div style="width: 2.618em; display: inline-block;">{% include svg/trophy.svg %}</div>
+      {% else %}
+      <div class="label">Rank</div>
+      <div class="rank-value">{{forloop.index}}</div>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+</div>
+<div style="text-align: center; margin: 2.618em 0;">
+  <a href="#top" class="refresh">Back to Top</a>
+</div>
