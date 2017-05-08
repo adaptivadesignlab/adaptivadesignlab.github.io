@@ -250,9 +250,9 @@ section.navigation {
 header.header {
   background-color: #03162B;
   background-image: url('{{'/assets/img/svg/pacman-banner.svg' | relative_url}}');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+src='{{'/assets/img/svg/pacman-banner.svg' | relative_url}}')";
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .header-content {
@@ -304,6 +304,7 @@ header.header {
 a.logo {
   display: block;
   width: 110px;
+  height: 34px;
   position: absolute;
   top: 2.618em;
   left: 2.618em;
