@@ -63,4 +63,22 @@ jQuery(function($) { //Safety pants!
         }
       }
     });
+    // Collapsible sections on info page
+    // Schedule
+    $(".js-schedule").click(function(){
+      $(this).toggleClass("is-expanded");
+      $(".js-schedule-target").slideToggle();
+    });
+    $(".js-rules").click(function(){
+      $(this).toggleClass("is-expanded");
+      $(".js-rules-target").slideToggle();
+    });
+    $(".js-adaptiva").click(function(){
+      $(this).toggleClass("is-expanded");
+      $(".js-adaptiva-target").slideToggle();
+    });
+    $(".js-resources").click(function(){
+      $(this).toggleClass("is-expanded");
+      $(".js-resources-target").slideToggle();
+    });
 });

@@ -8,11 +8,14 @@ subtitle: Information
   <p>Now that you've made it to Minneapolis, it's time to take your rightful place as the MMS Pac-Man Champion. In order to do so, you need to track your rivals and know when to be where. You've come to the right place!
   <p>On this site (thoughtfully developed by the <a href="http://design.adaptiva.com" target="_blank" title="Adaptiva Design Lab">Adaptiva Design Lab</a>), you'll find the <a href="{{"/leaderboard" | relative_url}}">leaderboard</a> that shows all player scores and the current champion, a list of <a href="{{"/prizes" | relative_url}}">prizes</a>, and some free content and resources we hope you'll enjoy.</p>
 
-  <h2>Schedule</h2>
+  <h2 class="collapse-heading js-schedule">Schedule {% include html/collapse-icon.html %}</h2>
+  <div class="collapse-content js-schedule-target" style="display: none;">
+    <p>Other than the final championship, use of the Pac-Man system is managed on a first come first serve basis. Just come to our booth and snag a spot in line when you're ready to play!</p>
+    <p>The top four ranking gamers will be invited to face off for a $100 Amazon Gift Card and a champion's plaque.</p> <p><strong>The final championship will be held on Wednesday, May 17th at 3:00 PM Central Time.</strong></p>
+  </div>
 
-  <p>Other than the final championship, use of the Pac-Man system is managed on a first come first basis. Just come to our booth and snag a spot in line when you're ready to play!</p>
-  <p>The top four ranking gamers will be invited to face off for a $100 Amazon Gift Card and a champion's plaque.</p> <p><strong>The final championship will be held on Wednesday, May 17th at 3:00 PM Central Time.</strong></p>
-  <h2>Rules &amp; Scoring</h2>
+  <h2 class="collapse-heading js-rules">Rules &amp; Scoring {% include html/collapse-icon.html %}</h2>
+  <div class="collapse-content js-rules-target" style="display: none;">
   <p>We'll keep it simple:</p>
 
   <h3>Rules</h3>
@@ -30,16 +33,21 @@ subtitle: Information
     <li><strong>Only the winning score from games of two or more players will be recorded.</strong> If you are the winner of a multiplayer round, report your name and score to Adaptiva staff at the booth table.</li>
     <li>There are no restrictions on player names on the leaderboard, but please help us out and try to keep it simple.<br><br> By default, we will enter first name and last initial. If you have a gamer tag you'd like to use, we'll be happy to comply unless it's, like, 38 characters long.<br><br>No inappropriate player names, please.</li>
   </ol>
+</div>
 
-  <h2>Adaptiva at MMS</h2>
+    <h2 class="collapse-heading js-adaptiva">Adaptiva at MMS 2017 {% include html/collapse-icon.html %}</h2>
+    <div class="collapse-content js-adaptiva-target" style="display: none;">
   <p>Adaptiva is <em>the</em> diamond sponsor at MMS 2017! Because this is the coolest conference, obviously. You can find us (and the Pac-Man system) at booth #10, on the left side of the entrance to the expo hall.</p>
   <h3>Look, a map!</h3>
+  </div>
 </div>
-<div class="page-img">
+<div class="page-img floor-plan js-adaptiva-target" style="display: none;">
   {% include svg/mms-floor-plan.svg %}
 </div>
-<div class="page-txt">
-  <h2>Free content we think you'll like</h2>
+<div class="page-txt" style="margin-top: 0;">
+  <h2 class="collapse-heading js-resources">Free content we think you'll like {% include html/collapse-icon.html %}</h2>
+  <div class="collapse-content js-resources-target" style="display: none;">
   <p>Adaptiva is committed to generating free and <em>helpful</em> resources to the systems management and ConfigMgr community.</p>
   <!-- Add links to SCCM academy and sound cloud -->
+  </div>
 </div>

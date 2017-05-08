@@ -1,4 +1,5 @@
 baseurl: ""
+repository: jesserogers/jesserogers.github.io
 exclude: ['README.md']
 permalink: pretty
 gems: [jekyll-paginate]
