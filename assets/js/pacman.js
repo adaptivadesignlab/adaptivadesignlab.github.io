@@ -6,10 +6,10 @@ jQuery(function($) { //Safety pants!
     var pad = $(".navigation").height() + (16 * 1.618);
     if (scroll >= hdr) { // If user scrolls past the header
       $(".navigation").addClass("is-sticky"); // Add sticky class to navigation
-      $(".prizes").css("padding-top", pad); // Adds padding to avoid the scroll jump
+      $(".js-page-content").css("padding-top", pad).addClass("is-padded"); // Adds padding to avoid the scroll jump
     } else { // If user scrolls back up to the header
       $(".navigation").removeClass("is-sticky"); // remove sticky class
-      $(".prizes").css("padding-top", "");
+      $(".js-page-content").css("padding-top", "").removeClass("is-padded");
     }
   });
   // Padding for mobile nav

@@ -232,8 +232,8 @@ section.navigation {
           .nav-icon {
             display: block;
             width: auto;
-            max-width: 1.618em;
-            max-height: 1.618em;
+            width: 2em;
+            height: 2em;
             margin: 0 auto 0.6em;
             .leaderboard-1,
             .prizes-1,
@@ -287,13 +287,16 @@ src='{{'/assets/img/svg/pacman-banner.svg' | relative_url}}')";
   @media #{$mobile} {
     display: block;
     height: auto;
-    padding: 40px 20px 20px;
+    padding: 20px;
     h1 {
       font-size: 1.618rem;
     }
     h1,
     h3 {
       text-align: left;
+    }
+    h3 {
+      margin-bottom: 0;
     }
     > div {
       text-align: right;
@@ -309,9 +312,7 @@ a.logo {
   top: 2.618em;
   left: 2.618em;
   @media screen and (max-width: 1024px) {
-    top: 20px;
-    left: 20px;
-    width: 68px;
+    position: static;
   }
 }
 
@@ -409,6 +410,14 @@ a.logo {
   }
   .label {
     color: lighten($blue, 42%);
+  }
+}
+
+section.js-page-content {
+  &.is-padded {
+    @media #{$mobile} {
+      padding: 1.618em 0 4.2em !important;
+    }
   }
 }
 
@@ -533,7 +542,7 @@ section.info {
     color: $white;
     &::before {
       color: $white;
-      left: 6px;
+      left: 0.618em;
     }
   }
 }
