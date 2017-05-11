@@ -346,7 +346,7 @@ a.logo {
     box-shadow: 6px 6px 0 0 $purple;
     .refresh-icon {
       svg {
-        transform: rotate(180deg);
+        transform: rotate(-180deg);
       }
     }
   }
@@ -380,7 +380,7 @@ section.pacman {
 }
 
 .pacman-score {
-  transition: background-color 400ms $ease-in;
+  transition: background-color 400ms ease;
   &.is-active {
     background-color: $light-gray;
   }
