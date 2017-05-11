@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MMS 2017 Pac-Man Championships</title>
+    <title>MMS 2017 Pac-Man Championships by Adaptiva</title>
     <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/pacman.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <div class="header-content">
-        <a class="logo" href="{{"/pacman" | relative_url}}">{% include svg/adaptiva-logo-white.svg %}</a>
+        <a class="logo" href="{{"/pacman" | relative_url}}" title="MMS 2017 Pac-Man Championships by Adaptiva">{% include svg/adaptiva-logo-white.svg %}</a>
         <h1>MMS 2017 Pac-Man Championships</h1>
         <h3>{{page.subtitle}}</h3>
         {% if page.url == "/pacman/" %}
@@ -23,17 +23,17 @@
       <nav class="nav">
         <ul>
           <li>
-            <a {% if page.url == "/pacman/" %}class="current"{% endif %} href="{{"/pacman" | relative_url}}">
+            <a {% if page.url == "/pacman/" %}class="current"{% endif %} href="{{"/pacman" | relative_url}}" title="MMS 2017 Pac-Man Leaderboard">
               <div class="nav-icon">{% include svg/leaderboard.svg %}</div><span>Leaderboard</span>
             </a>
           </li>
           <li>
-            <a {% if page.url == "/pacman/prizes/" %}class="current"{% endif %} href="{{"/pacman/prizes" | relative_url}}">
+            <a {% if page.url == "/pacman/prizes/" %}class="current"{% endif %} href="{{"/pacman/prizes" | relative_url}}" title="MMS 2017 Pac-Man Prize List">
               <div class="nav-icon">{% include svg/prizes.svg %}</div><span>Prizes</span>
             </a>
           </li>
           <li>
-            <a {% if page.url == "/pacman/info/" %}class="current"{% endif %} href="{{"/pacman/info" | relative_url}}">
+            <a {% if page.url == "/pacman/info/" %}class="current"{% endif %} href="{{"/pacman/info" | relative_url}}" title="Info, schedule, free content, and more!">
               <div class="nav-icon">{% include svg/info.svg %}</div><span>Info</span>
             </a>
           </li>

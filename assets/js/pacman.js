@@ -6,10 +6,12 @@ jQuery(function($) { //Safety pants!
     var pad = $(".navigation").height() + (16 * 1.618);
     if (scroll >= hdr) { // If user scrolls past the header
       $(".navigation").addClass("is-sticky"); // Add sticky class to navigation
-      $(".js-page-content").css("padding-top", pad).addClass("is-padded"); // Adds padding to avoid the scroll jump
+      $(".js-page-content").css("padding-top", pad);
+      $(".pacman").addClass("is-padded");
     } else { // If user scrolls back up to the header
       $(".navigation").removeClass("is-sticky"); // remove sticky class
-      $(".js-page-content").css("padding-top", "").removeClass("is-padded");
+      $(".js-page-content").css("padding-top", "");
+      $(".pacman").removeClass("is-padded");
     }
   });
   // Padding for mobile nav
@@ -63,6 +65,13 @@ jQuery(function($) { //Safety pants!
         }
       }
     });
+    // Expandable social options for Pac-Man scores
+    $(".pacman-score").click(function(){ // when a score is clicked on
+      $(this).toggleClass("is-active");
+      $(this).children(".pacman-score-sharing").slideToggle().toggleClass("is-expanded");
+      $(this).children(".pacman-score-content").toggleClass("sharing"); // slide in sharing feature
+    })
+
     // Collapsible sections on info page
     // Schedule
     $(".js-schedule").click(function(){

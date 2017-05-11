@@ -135,6 +135,7 @@ section.navigation {
   }
   @media #{$mobile} {
     background-color: $darkest-blue;
+    padding-top: 4px;
     position: fixed;
     bottom: 0;
     z-index: 3;
@@ -257,7 +258,8 @@ src='{{'/assets/img/svg/pacman-banner.svg' | relative_url}}')";
 
 .header-content {
   position: relative;
-  height: 360px;
+  padding: 20px;
+  min-height: 360px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,7 +289,7 @@ src='{{'/assets/img/svg/pacman-banner.svg' | relative_url}}')";
   @media #{$mobile} {
     display: block;
     height: auto;
-    padding: 20px;
+    min-height: inherit;
     h1 {
       font-size: 1.618rem;
     }
@@ -302,6 +304,11 @@ src='{{'/assets/img/svg/pacman-banner.svg' | relative_url}}')";
       text-align: right;
     }
   }
+  @media #{$tablet} {
+    h1 {
+      margin-top: 20px;
+    }
+  }
 }
 
 a.logo {
@@ -313,6 +320,9 @@ a.logo {
   left: 2.618em;
   @media screen and (max-width: 1024px) {
     position: static;
+  }
+  @media #{$tablet} {
+    margin: 0 auto;
   }
 }
 
@@ -344,26 +354,49 @@ a.logo {
     padding: 0.6em 1.618em;
   }
 }
+
+section.js-page-content {
+  padding: 1.618em 0;
+  @media #{$mobile} {
+    padding-top: 0 !important;
+  }
+}
+
 .content {
   max-width: 1200px;
   margin: auto;
 }
-.pacman-scores {
-  padding-top: 2.618em;
-  @media screen and (max-width: 1024px) {
-    padding: 0;
+
+section.pacman {
+  @media #{$mobile} {
+    padding-top: 0 !important;
+  }
+  @media #{$tablet} {
+    padding-top: 0;
+    &.is-padded {
+      margin-top: -1.618em;
+    }
   }
 }
+
 .pacman-score {
+  transition: background-color 400ms $ease-in;
+  &.is-active {
+    background-color: $light-gray;
+  }
+}
+
+.pacman-score-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 20px;
   border-bottom: 2px solid $light-gray;
   transition: 300ms ease;
-  cursor: default;
-  &:hover {
-    border-color: $gray;
+  cursor: pointer;
+  &:hover,
+  &.sharing {
+    border-color: $darkest-blue;
   }
 }
 .player,
@@ -398,11 +431,86 @@ a.logo {
   }
 }
 
+.pacman-score-sharing {
+  padding: 40px;
+  position: relative;
+  background-color: $darkest-blue;
+  @include vertical-center;
+  justify-content: space-between;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: $darkest-blue;
+    height: 16px;
+    width: 3px;
+    top: 10px;
+    left: 20px;
+    transition: 750ms $ease-in;
+  }
+  p {
+    color: $white;
+    margin: 0;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    max-width: 600px;
+  }
+  a {
+    display: inline-block;
+    padding: 1em 2em;
+    color: $white;
+    background-color: $orange;
+    transition: 300ms $snap;
+    &:hover {
+      background-color: $purple;
+      box-shadow: 6px 6px 0 0 $orange;
+    }
+  }
+  &.is-expanded {
+    &::before {
+      transform: rotate(225deg);
+    }
+    &::after {
+      transform: rotate(315deg);
+    }
+    &::before,
+    &::after {
+      transition: 300ms $snap !important;
+      background-color: $purple;
+    }
+  }
+  @media #{$mobile} {
+    a {
+      -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: flex-start;
+      margin-top: 1.618em;
+    }
+  }
+}
+
+.lil-icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  vertical-align: middle;
+  svg {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
 .champion {
-  border: none;
   background: $blue;
   box-shadow: 6px 6px 0 0 rgba($orange, 0.26);
   position: relative;
+  .pacman-score-content {
+    border: none;
+  }
   .player-name,
   .score-value,
   .rank-value {
@@ -411,23 +519,17 @@ a.logo {
   .label {
     color: lighten($blue, 42%);
   }
-}
-
-section.js-page-content {
-  &.is-padded {
-    @media #{$mobile} {
-      padding: 1.618em 0 4.2em !important;
-    }
+  &.is-active {
+    background-color: $blue;
   }
 }
 
 section.prizes {
-  padding: 1.618em 0;
   .content {
     overflow: hidden;
   }
-  @media #{$mobile} {
-    padding: 0;
+  @media #{$tablet} {
+    padding-top: 1.618em;
   }
 }
 
@@ -444,6 +546,11 @@ section.prizes {
   width: 100%;
   max-width: 960px;
   margin: 2.618em auto;
+  &.plaque {
+    @media #{$mobile} {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .collapse-heading {
@@ -511,10 +618,13 @@ section.prizes {
 }
 
 section.info {
-  padding: 1.618em 0 4.2em;
+  padding-bottom: 4.2em;
   .page-img,
   .page-txt {
     margin: 0 auto;
+  }
+  @media #{$tablet} {
+    padding-top: 1.618em;
   }
 }
 
