@@ -2,6 +2,7 @@
 layout: pacman
 section_class: pacman
 subtitle: Leaderboard
+meta: Leaderboard, information, and prizes for the Midwest Management Summit 2017 Pac-Man Championships.
 ---
 <div class="pacman-scores">
 {% assign pacman = (site.data.pacman | sort: 'score' | reverse) %}
@@ -19,7 +20,7 @@ subtitle: Leaderboard
       </div>
       <div class="rank">
         {% if forloop.first == true %}
-        <div style="width: 2.618em; display: inline-block;">{% include svg/trophy.svg %}</div>
+        <div title="{{game.player}} is the current MMS 2017 Pac-Man Champion!" style="width: 2.618em; display: inline-block;">{% include svg/trophy.svg %}</div>
         {% else %}
         <div class="label">Rank</div>
         <div class="rank-value">{{forloop.index}}</div>
@@ -39,5 +40,5 @@ subtitle: Leaderboard
 {% endfor %}
 </div>
 <div style="text-align: center; margin: 2.618em 0;">
-  <a href="#top" class="refresh">Back to Top</a>
+  <a href="#top" class="refresh" title="Click it, we double dog dare you!">Back to Top</a>
 </div>

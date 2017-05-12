@@ -2,8 +2,9 @@
 <html lang="en" id="top">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="{{page.meta}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MMS 2017 Pac-Man Championships by Adaptiva</title>
+    <title>{% if page.title %}{{page.title}} / {% endif %}MMS 2017 Pac-Man Championships by Adaptiva</title>
     <link rel="icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/pacman.css?v=' | append: site.github.build_revision | relative_url }}">

@@ -174,7 +174,7 @@ section.navigation {
         display: block;
         text-decoration: none;
         padding: 1em;
-        color: $black;
+        color: $darkest-blue;
         transition: 300ms $easy-ease;
         svg {
           display: block;
@@ -508,6 +508,7 @@ section.pacman {
   background: $blue;
   box-shadow: 6px 6px 0 0 rgba($orange, 0.26);
   position: relative;
+  transition: 300ms $easy-ease;
   .pacman-score-content {
     border: none;
   }
@@ -519,8 +520,10 @@ section.pacman {
   .label {
     color: lighten($blue, 42%);
   }
+  &:hover,
   &.is-active {
     background-color: $blue;
+    box-shadow: 6px 6px 0 0 $orange;
   }
 }
 
