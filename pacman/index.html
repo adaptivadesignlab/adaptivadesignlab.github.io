@@ -20,7 +20,7 @@ meta: Leaderboard, information, and prizes for the Midwest Management Summit 201
       </div>
       <div class="rank">
         {% if forloop.first == true %}
-        <div title="{{game.player}} is the current MMS 2017 Pac-Man Champion!" style="width: 2.618em; display: inline-block;">{% include svg/trophy.svg %}</div>
+        <div class="trophy" title="{{game.player}} is the current MMS 2017 Pac-Man Champion!">{% include svg/trophy.svg %}</div>
         {% else %}
         <div class="label">Rank</div>
         <div class="rank-value">{{forloop.index}}</div>

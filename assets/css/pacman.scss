@@ -413,6 +413,11 @@ section.pacman {
 .rank {
   width: 25%;
   text-align: right;
+  .trophy {
+    display: inline-block;
+    width: 2.618em;
+    height: 4.2em;
+  }
 }
 .label {
   color: darken($gray, 10%);
@@ -549,6 +554,14 @@ section.prizes {
   width: 100%;
   max-width: 960px;
   margin: 2.618em auto;
+  svg {
+    width: 960px;
+    height: 540px;
+    @media #{$mobile} {
+      width: 100%;
+      height: auto;
+    }
+  }
   &.plaque {
     @media #{$mobile} {
       margin-bottom: 0;
