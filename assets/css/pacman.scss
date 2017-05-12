@@ -524,11 +524,15 @@ section.pacman {
   }
   .label {
     color: lighten($blue, 42%);
+    transition: 300ms $easy-ease;
   }
   &:hover,
   &.is-active {
-    background-color: $blue;
+    background-color: $purple;
     box-shadow: 6px 6px 0 0 $orange;
+    .label {
+      color: lighten($purple, 20%);
+    }
   }
 }
 
