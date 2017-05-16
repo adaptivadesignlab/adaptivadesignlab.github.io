@@ -2,16 +2,16 @@
   score: 100
   
 - player: Todd Cramer
-  score: 500
+  score: 700
   
 - player: Jason Akins
-  score: 400
+  score: 500
 
 - player: Barry Lorton
   score: 600
 
 - player: David Marsh
-  score: 300
+  score: 400
   
 - player: Edward Krudsen
   score: 400
@@ -38,13 +38,13 @@
   score: 100
   
 - player: Michael Davis
-  score: 1800
+  score: 2300
   
 - player: Marrand
   score: 400
   
 - player: Stephen Smith
-  score: 200
+  score: 300
   
 - player: Brian Snow
   score: 400
@@ -95,7 +95,7 @@
   score: 100
   
 - player: Chris Cote
-  score: 300
+  score: 600
   
 - player: Ias Snow
   score: 100
@@ -104,7 +104,28 @@
   score: 100
   
 - player: Chris Thomas
-  score: 400
+  score: 600
   
 - player: Calo
   score: 100
+
+- player: Josh Holschen
+  score: 300
+  
+- player: Robert Murrano
+  score: 100
+  
+- player: Stephen Smith
+  score: 100
+  
+- player: Bobby Walker
+  score: 100
+  
+- player: Barry Lorton
+  score: 200
+  
+- player: James Mymryk
+  score: 100
+  
+- player: Alvaro Saenz
+  score: 300
