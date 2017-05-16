@@ -2,10 +2,10 @@
   score: 100
   
 - player: Todd Cramer
-  score: 400
+  score: 500
   
 - player: Jason Akins
-  score: 100
+  score: 400
 
 - player: Barry Lorton
   score: 600
@@ -23,7 +23,7 @@
   score: 300
   
 - player: Roger Whyte
-  score: 200
+  score: 400
   
 - player: Jamal Black
   score: 300
@@ -38,7 +38,7 @@
   score: 100
   
 - player: Michael Davis
-  score: 100
+  score: 1800
   
 - player: Marrand
   score: 400
@@ -47,13 +47,13 @@
   score: 200
   
 - player: Brian Snow
-  score: 300
+  score: 400
   
 - player: Ray Leeper
   score: 100
   
 - player: Christopher Ramirez
-  score: 400
+  score: 700
   
 - player: Brian Hamilton
   score: 200
@@ -75,3 +75,36 @@
   
 - player: Adam Linberg
   score: 200
+
+- player: Latena Pakhurst
+  score: 200
+
+- player: Jason Snook
+  score: 300
+  
+- player: Artron Ashley
+  score: 200
+  
+- player: Bill Schultze
+  score: 100
+  
+- player: Kristen Rollings
+  score: 200
+  
+- player: Jacob Thao
+  score: 100
+  
+- player: Chris Cote
+  score: 300
+  
+- player: Ias Snow
+  score: 100
+  
+- player: Robert Van Sickle
+  score: 100
+  
+- player: Chris Thomas
+  score: 400
+  
+- player: Calo
+  score: 100
