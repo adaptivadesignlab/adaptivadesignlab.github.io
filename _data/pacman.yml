@@ -1,17 +1,17 @@
 - player: Chris Malay
-  score: 100
+  score: 300
   
 - player: Todd Cramer
-  score: 700
+  score: 1100
   
 - player: Jason Akins
   score: 500
 
 - player: Barry Lorton
-  score: 600
+  score: 800
 
 - player: David Marsh
-  score: 400
+  score: 800
   
 - player: Edward Krudsen
   score: 400
@@ -38,10 +38,10 @@
   score: 100
   
 - player: Michael Davis
-  score: 2300
+  score: 2700
   
-- player: Robert Murrano
-  score: 500
+- player: Marrand
+  score: 400
   
 - player: Stephen Smith
   score: 300
@@ -53,7 +53,7 @@
   score: 100
   
 - player: Christopher Ramirez
-  score: 700
+  score: 1000
   
 - player: Brian Hamilton
   score: 200
@@ -95,7 +95,7 @@
   score: 100
   
 - player: Chris Cote
-  score: 600
+  score: 800
   
 - player: Ias Snow
   score: 100
@@ -111,6 +111,9 @@
 
 - player: Josh Holschen
   score: 300
+  
+- player: Robert Murrano
+  score: 100
   
 - player: Stephen Smith
   score: 100
@@ -128,4 +131,19 @@
   score: 300
 
 - player: Michael Kobb
+  score: 400
+
+- player: Todd Christensen
+  score: 200
+  
+- player: Aaron Mook
+  score: 200
+  
+- player: Steve Bachahn
+  score: 200
+  
+- player: Natashia Heil
+  score: 300
+  
+- player: Rafael Vasquez
   score: 300
