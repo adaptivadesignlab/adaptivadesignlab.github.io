@@ -2,16 +2,16 @@
   score: 300
   
 - player: Todd Cramer
-  score: 2100
+  score: 3300
   
 - player: Jason Akins
   score: 500
 
 - player: Barry Lorton
-  score: 2800
+  score: 3100
 
 - player: David Marsh
-  score: 2600
+  score: 3500
   
 - player: Edward Krudsen
   score: 400
@@ -38,9 +38,8 @@
   score: 100
   
 - player: Michael Davis
-  score: 3600
+  score: 4000
   
- 
 - player: Brian Snow
   score: 400
   
@@ -48,7 +47,7 @@
   score: 100
   
 - player: Christopher Ramirez
-  score: 2100
+  score: 2500
   
 - player: Brian Hamilton
   score: 200
@@ -108,7 +107,7 @@
   score: 300
   
 - player: Robert Murrano
-  score: 500
+  score: 700
   
 - player: Stephen Smith
   score: 600
@@ -145,3 +144,6 @@
   
 - player: Peder Cannon
   score: 600
+  
+- player: Daniel Harper
+  score: 300
