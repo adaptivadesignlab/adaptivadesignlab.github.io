@@ -43,9 +43,6 @@
 - player: Marrano
   score: 400
   
-- player: Stephen Smith
-  score: 300
-  
 - player: Brian Snow
   score: 400
   
@@ -116,7 +113,7 @@
   score: 100
   
 - player: Stephen Smith
-  score: 100
+  score: 400
   
 - player: Bobby Walker
   score: 100
@@ -143,7 +140,4 @@
   score: 200
   
 - player: Rafael Vasquez
-  score: 300
-  
-- player: Rafael Vasquez
-  score: 600
+  score: 900
