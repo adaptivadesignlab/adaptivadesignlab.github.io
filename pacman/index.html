@@ -12,7 +12,7 @@ meta: Leaderboard, information, and prizes for the Midwest Management Summit 201
       <div class="player">
         <div class="label">Player</div>
         <div class="player-name"
-        title="{{game.player}} is currently ranked #{{forloop.index}} with a score of {{game.score}} in the MMS 2017 Championships by Adaptiva">{{game.player}}</div>
+        title="{{game.player}} is the MMS 2017 Pac-Man Champion! Congrats!">{{game.player}}</div>
       </div>
       <div class="score">
         <div class="label">Points</div>
@@ -20,7 +20,7 @@ meta: Leaderboard, information, and prizes for the Midwest Management Summit 201
       </div>
       <div class="rank">
         {% if forloop.first == true %}
-        <div class="trophy" title="{{game.player}} is the current MMS 2017 Pac-Man Champion!">{% include svg/trophy.svg %}</div>
+        <div class="trophy" title="{{game.player}} is the MMS 2017 Pac-Man Champion!">{% include svg/trophy.svg %}</div>
         {% else %}
         <div class="label">Rank</div>
         <div class="rank-value">{{forloop.index}}</div>
@@ -29,10 +29,10 @@ meta: Leaderboard, information, and prizes for the Midwest Management Summit 201
     </div>
     <div class="pacman-score-sharing" style="display: none;">
       {% if forloop.first == true %}
-      <p>Congratulations, {{game.player}}, you're the current MMS Pac-Man champion! Now display your dominance on social media!</p>
+      <p>Congratulations, {{game.player}}, you're the MMS Pac-Man champion! Now display your dominance on social media!</p>
       <a href="https://twitter.com/intent/tweet?text=I+am+the+current+Pac-Man+champion+at+@mmsmoa%21+I+have+{{game.score}}+ranking+points+on+Pac-Man+at+the+@adaptiva+booth%21&url=http%3A%2F%2Fadaptiva.com%2Fpacman&hashtags=mmsmoa" target="_blank" title="Tweet your score!"><div class="lil-icon">{% include svg/twitter-icon.svg %}</div> Tweet Score</a>
       {% else %}
-      <p>Nice work, {{game.player}}, you've made it to the leaderboard. Now share your success on social media!</p>
+      <p>Nice work, {{game.player}}, you made it to the leaderboard. Now share your success on social media!</p>
       <a href="https://twitter.com/intent/tweet?text=I+have+{{game.score}}+ranking+points+on+Pac-Man+at+the+@adaptiva+booth+at+@mmsmoa%2C+ranked+{{forloop.index}}%21&url=http%3A%2F%2Fadaptiva.com%2Fpacman&hashtags=mmsmoa" target="_blank" title="Tweet your score!"><div class="lil-icon">{% include svg/twitter-icon.svg %}</div> Tweet Score</a>
       {% endif %}
     </div>
