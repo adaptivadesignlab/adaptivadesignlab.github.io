@@ -292,10 +292,15 @@ section.post-nav {
       color: $gray;
     }
     @media #{$mobile} {
-      -webkit-box-orient: horizontal;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      a,
+      span {
+        display: block;
+        margin-bottom: 1em;
+      }
     }
   }
 }

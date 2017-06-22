@@ -9,7 +9,6 @@ author_img: jesse-rogers.jpg
 author_link_ext: "jesse"
 image: 2017-04-25-welcome.jpg
 navclass: ondark
-featured: true
 ---
 Welcome! You've navigated to this post, which means that this website is functioning and at least somewhat usable in production — awesome.
 
