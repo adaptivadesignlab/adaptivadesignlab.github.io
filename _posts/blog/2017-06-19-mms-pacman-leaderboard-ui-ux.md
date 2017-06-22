@@ -45,9 +45,9 @@ Each score entry is interactive. Users can click/tap on their score to expand th
 </div>
 The next tab showcased information on prizes that attendees could win by competing. We created vector illustrations and exported them as optimized SVGs. Utilizing Jekyll's include function, we were able to put in complex SVGs into the page without cluttering our markup.
 
-The hero image up top—the isometric Pac-Man maze—is also SVG. We utilized SVG wherever possible and kept raster images to a minimum, and performance benefits are noticeable.
+The hero image up top (the isometric Pac-Man maze) is also SVG. We leveraged SVG wherever possible and kept raster images to a minimum, and performance benefits are noticeable.
 
-**This whole site is ridiculously fast.**
+**This whole site is ridiculously fast. Like**
 <div class="j-row" style="margin: 2em 0; overflow: hidden;">
 <div class="j-col j-col-9"><img src="{{site.baseurl}}/assets/img/posts/pacman-prizes.png" style="display: block; margin: 0 0 1.618em; box-shadow: 6px 6px 0 0 rgba(0,0,0,0.2);" alt="Desktop display of MMS 2017 Pac-Man leaderboard tweet functionality"></div>
 <div class="j-col j-col-3"><img src="{{site.baseurl}}/assets/img/posts/pacman-prizes-m.png" style="display: block; margin: 0 0 1.618em; box-shadow: 6px 6px 0 0 rgba(0,0,0,0.2);" alt="Desktop display of MMS 2017 Pac-Man leaderboard tweet functionality"></div>

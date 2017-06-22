@@ -14,6 +14,7 @@ layout: default
 <section class="post-content">
   <div class="content">
     <a href="{{"/blog" | relative_url}}" class="back-link"><span>All posts</span></a>
+    <img src="{{site.baseurl}}/assets/img/posts/{{page.image}}" alt="{{page.meta}}" style="display: none;" />
     {{content}}
     {% include author-meta.html %}
   </div>
