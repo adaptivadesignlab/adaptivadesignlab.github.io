@@ -371,7 +371,7 @@ nav.nav {
   &.header-guidelines {
     height: 6vw;
     min-height: 300px;
-    background-image: radial-gradient(circle farthest-side at right top, $purple, $red 125%);
+    background-image: radial-gradient(circle farthest-side at right top, $purple, $darkest-blue 125%);
     @include vertical-center;
     text-align: center;
     h1 {
