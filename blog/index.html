@@ -16,7 +16,7 @@ layout: default
       {% for post in paginator.posts %}
       <li class="blog-post">
         <a title="{{post.title}}" href="{{post.url | relative_url}}" class="j-row">
-          <div cl<div class="content">
+          <div class="content">
             <h3 class="blog-post-title j-col j-col-6">{{post.title}}</h3>
             <p class="blog-post-excerpt j-col j-col-6">{{post.meta}}<br><span class="post-date">{{post.posted}}</span> <span class="post-author">by {{post.author}}</span></p>
           </div>
