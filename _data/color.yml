@@ -16,7 +16,7 @@
 
 - title: Darkest Blue
   hex: '#041d39'
-  rgb: 'rgb(7, 57, 113)'
+  rgb: 'rgb(4, 29, 57)'
   var: '$darkest-blue / @darkest-blue'
 
 - title: Bright Blue
