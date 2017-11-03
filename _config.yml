@@ -1,5 +1,5 @@
 baseurl: ""
-repository: jesserogers/jesserogers.github.io
+repository: adaptivadesignlab/adaptivadesignlab.github.io
 exclude: ['README.md']
 permalink: pretty
 gems: [jekyll-paginate]

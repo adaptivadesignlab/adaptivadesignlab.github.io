@@ -3,41 +3,41 @@ jQuery(function($) { //Safety pants!
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 10) { // If user scrolls more than 10px from top
-      $(".navbar").addClass("onscroll"); // Add opaque background class to navbar
+      $('.navbar').addClass('onscroll'); // Add opaque background class to navbar
     } else { // If user scrolls back up to the top 10px of window
-      $(".navbar").removeClass("onscroll"); // remove class
+      $('.navbar').removeClass('onscroll'); // remove class
     }
   });
 
   // Hanbaaga!
-  $(".hanbaaga").click(function() {
-    $(this).toggleClass("active-baaga");
-    $(".nav").toggleClass("expanded");
-    $(".navbar").toggleClass("nav-activated");
+  $('.hanbaaga').click(function() {
+    $(this).toggleClass('active-baaga');
+    $('.nav').toggleClass('expanded');
+    $('.navbar').toggleClass('nav-activated');
   });
 
   // Collapsible Guidelines Nav
 
-  $(".guideline-nav-header").click(function() {
-    $(this).toggleClass("collapse");
-    $(".guidelines-list").toggleClass("collapse");
+  $('.guideline-nav-header').click(function() {
+    $(this).toggleClass('collapse');
+    $('.guidelines-list').toggleClass('collapse');
   })
 
   // Sticky Side Nav
 
-  var sideNav = $(".guidelines-nav");
-  backLink = $(".back-link");
-  sticky = "sticky";
-  hdr = $("header").height();
-  siteWidth = $(".guideline-entry .content").width();
+  var sideNav = $('.guidelines-nav');
+  backLink = $('.back-link');
+  sticky = 'sticky';
+  hdr = $('header').height();
+  siteWidth = $('.guideline-entry .content').width();
   sideNavWidth = siteWidth / 3;
 
-  $(".guidelines-nav").css(
+  $('.guidelines-nav').css(
     'max-width', sideNavWidth
   );
 
   $(window).resize(function() {
-    $(".guidelines-nav").css(
+    $('.guidelines-nav').css(
       'max-width', sideNavWidth
     );
   });
@@ -76,7 +76,7 @@ jQuery(function($) { //Safety pants!
             // Must change focus!
             var $target = $(target);
             $target.focus();
-            if ($target.is(":focus")) { // Checking if the target was focused
+            if ($target.is(':focus')) { // Checking if the target was focused
               return false;
             } else {
               $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
@@ -87,8 +87,8 @@ jQuery(function($) { //Safety pants!
       }
     });
   // Responsive Video Embeds
-  $("#youtube_iframe").removeAttr("width"); // Remove 'width' attr
-  $("#youtube_iframe").removeAttr("height"); // Remove 'height' attr
+  $('#youtube_iframe').removeAttr('width'); // Remove 'width' attr
+  $('#youtube_iframe').removeAttr('height'); // Remove 'height' attr
 });
 
 $(document).ready(function() {

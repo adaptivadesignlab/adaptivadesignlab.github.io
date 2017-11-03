@@ -100,7 +100,7 @@ p {
     color: $dark-black;
     border-bottom: 1px solid $yellow;
     box-shadow: inset 0px -0.42em 0 0 $yellow;
-    transition: box-shadow 400ms $snap;
+    transition: box-shadow 400ms $transition-snap;
     &:hover {
       box-shadow: inset 0px -1.618em 0 0 $yellow;
     }
@@ -126,7 +126,7 @@ section.navigation {
   padding: 0;
   margin: 0;
   width: 100%;
-  transition: box-shadow 400ms $easy-ease;
+  transition: box-shadow 400ms $transition-ease;
   &.is-sticky {
     position: fixed;
     top: 0;
@@ -174,7 +174,7 @@ section.navigation {
         text-decoration: none;
         padding: 1em;
         color: $darkest-blue;
-        transition: 300ms $easy-ease;
+        transition: 300ms $transition-ease;
         svg {
           display: block;
           max-height: 100%;
@@ -182,7 +182,7 @@ section.navigation {
           .leaderboard-1,
           .prizes-1,
           .info-1 {
-            transition: fill 400ms $easy-ease;
+            transition: fill 400ms $transition-ease;
           }
         }
         &.current,
@@ -331,7 +331,7 @@ a.logo {
   padding: 1em 2.618em;
   color: $white;
   background-color: $green;
-  transition: 300ms $easy-ease;
+  transition: 300ms $transition-ease;
   .refresh-icon {
     display: inline-block;
     width: 0.8em;
@@ -339,7 +339,7 @@ a.logo {
     line-height: 1em;
     vertical-align: middle;
     svg {
-      transition: 600ms $easy-ease;
+      transition: 600ms $transition-ease;
     }
   }
   &:hover {
@@ -454,7 +454,7 @@ section.pacman {
     width: 3px;
     top: 10px;
     left: 20px;
-    transition: 750ms $ease-in;
+    transition: 750ms $transition-ease-in;
   }
   p {
     color: $white;
@@ -469,7 +469,7 @@ section.pacman {
     padding: 1em 2em;
     color: $white;
     background-color: $orange;
-    transition: 300ms $snap;
+    transition: 300ms $transition-snap;
     &:hover {
       background-color: $purple;
       box-shadow: 6px 6px 0 0 $orange;
@@ -484,7 +484,7 @@ section.pacman {
     }
     &::before,
     &::after {
-      transition: 300ms $snap !important;
+      transition: 300ms $transition-snap !important;
       background-color: $purple;
     }
   }
@@ -514,7 +514,7 @@ section.pacman {
   background: $blue;
   box-shadow: 6px 6px 0 0 rgba($orange, 0.26);
   position: relative;
-  transition: 300ms $easy-ease;
+  transition: 300ms $transition-ease;
   .pacman-score-content {
     border: none;
   }
@@ -525,7 +525,7 @@ section.pacman {
   }
   .label {
     color: lighten($blue, 42%);
-    transition: 300ms $easy-ease;
+    transition: 300ms $transition-ease;
   }
   &:hover,
   &.is-active {
@@ -578,7 +578,7 @@ section.prizes {
   cursor: pointer;
   border-bottom: 2px solid $light-gray;
   position: relative;
-  transition: 400ms ease;
+  transition: 400ms $transition-ease;
 }
 
 .js-collapse-icon {
@@ -595,7 +595,7 @@ section.prizes {
     height: 2px;
     top: 7px;
     left: 0;
-    transition: transform 400ms $snap, background 400ms ease;
+    transition: transform 400ms $transition-snap, background 400ms ease;
     &:last-child {
       width: 2px;
       height: 16px;
@@ -654,7 +654,7 @@ section.info {
   position: relative;
   display: inline-block;
   padding: 1em;
-  transition: 300ms $snap;
+  transition: 300ms $transition-snap;
   font-weight: 700;
   box-shadow: inset 2.6em 0 0 rgba($green, 0.1);
   &::before {
@@ -665,7 +665,7 @@ section.info {
     left: 100%;
     top: 50%;
     transform: translateY(-50%);
-    transition: 300ms $snap;
+    transition: 300ms $transition-snap;
   }
   &:hover {
     box-shadow: inset 17.8em 0 0 $green;

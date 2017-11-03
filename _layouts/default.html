@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body {% if page.bodyclass %}class="{{page.bodyclass}}"{% endif %}>
-    {% include nav.html %}
-    {% include header.html %}
+    {% include html/nav.html %}
+    {% include html/header.html %}
     {{content}}
-    {% include footer.html %}
+    {% include html/footer.html %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     {% if page.typekit %}
     <script src="https://use.typekit.net/fqk2oeo.js"></script>
@@ -34,4 +34,4 @@
     </script>
   </body>
 </html>
-<!-- Hey 1E if ur reading this it's too late -->
+<!-- if ur reading this it's too late -->

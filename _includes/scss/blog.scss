@@ -79,7 +79,7 @@ section.blog-posts {
       }
       a {
         padding: 2.618em 0;
-        transition: background 300ms ease;
+        transition: background 300ms $transition-ease;
         @media #{$mobile} {
           padding: 1.618em 20px;
         }
@@ -221,7 +221,7 @@ section.post-content {
   display: block;
   color: lighten($black, 42%);
   position: relative;
-  transition: color 300ms ease;
+  transition: color 300ms $transition-ease;
   padding: 20px;
   top: 0;
   @media screen and (min-width: 1200px) {
@@ -241,7 +241,7 @@ section.post-content {
     top: 50%;
     transform: translateY(-50%);
     left: 6px;
-    transition: 300ms $snap;
+    transition: 300ms $transition-snap;
   }
   &:hover {
     color: $orange;
@@ -278,7 +278,7 @@ section.post-nav {
     span {
       display: inline-block;
       padding: 0.6em 1em;
-      transition: 250ms ease;
+      transition: 250ms $transition-ease;
     }
     a {
       background: rgba($orange, 0.1);

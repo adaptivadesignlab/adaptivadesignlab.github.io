@@ -53,7 +53,7 @@ h3.guideline-nav-header {
     right: 10px;
     transform: translateY(-50%);
     font-size: 1.2em;
-    transition: 250ms ease;
+    transition: 250ms $transition-ease;
     font-weight: 300;
   }
   &.collapse {
@@ -93,14 +93,14 @@ h3.guideline-nav-header {
     background: rgba($black, 0.1);
     max-height: 999px;
     overflow: hidden;
-    transition: 250ms $snap;
+    transition: 250ms $transition-snap;
     li.guidelines-item {
       margin: 0;
       overflow: hidden;
       a {
         display: block;
         padding: 10px;
-        transition: background 250ms ease;
+        transition: background 250ms $transition-ease;
         text-decoration: none;
         color: $dark-black;
         &:hover {
