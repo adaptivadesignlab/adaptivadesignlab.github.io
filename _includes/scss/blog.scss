@@ -12,7 +12,7 @@
     min-width: 1180px;
     height: 100%;
     max-height: 500px;
-    background: $green;
+    background: $blue;
     z-index: -1;
     @media #{$mobile} {
       display: none;
@@ -281,11 +281,11 @@ section.post-nav {
       transition: 250ms $transition-ease;
     }
     a {
-      background: rgba($orange, 0.1);
-      color: $orange;
+      background: rgba($blue, 0.1);
+      color: $blue;
       &:hover {
-        background: rgba($orange, 0.26);
-        box-shadow: 6px 6px 0 0 rgba($red, 0.1);
+        background: rgba($blue, 0.26);
+        box-shadow: 6px 6px 0 0 rgba($purple, 0.16);
       }
     }
     span {

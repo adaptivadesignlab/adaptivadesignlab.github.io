@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 title: MMS 2017 Pac-Man Website
-meta: UI/UX design and development for an online Pac-Man scoreboard at MMS 2017 at Mall of America.
+meta: We built an online leaderboard for Adaptiva's Pac-Man competition at MMS 2017.
 posted: June 22 2017
 category: blog
 author: Jesse Rogers

@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 title: Adaptiva Bowling Social Event
-meta: Bowling, drinks, food? Of course we took photos and videos.
+meta: We went to a company bowling party and took some photos and videos.
 posted: April 26 2017
 category: blog
 author: Jesse Rogers
@@ -14,25 +14,31 @@ We had a bunch of remote employees at Adaptiva HQ in Bellevue, WA recently, so w
 
 Colored lighting and interesting decor screamed, "FILM ME!" to Adam and me, so we made sure to bring some gear. Check out the short video we put together:
 
+<div class="j-row" style="margin: 4.263rem 0;">
+<div class="j-col j-col-10 push-2">
 <div class="responsive-video">
 <iframe src="https://player.vimeo.com/video/214739700" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+</div>
 </div>
 
 Equipped with the trusty Sony A7 and the 55mm f/1.8 Zeiss lens they make for it, we grabbed a few drinks ourselves and took some photos.
 
-<div class="slider-wrap">
+<div class="j-row" style="margin: 2.618rem 0 1.618rem;">
+<div class="slider-wrap j-col j-col-10 push-2">
 <div class="slider" style="height: 640px; text-align: right;">
 <div class="slider-container">
+<div class="photo vertical"><img src="{{"/assets/img/posts/2017-04-24-bowling-12.jpg" | relative_url}}"></div>
 <div class="photo"><img src="{{"/assets/img/posts/2017-04-24-bowling-32.jpg" | relative_url}}"></div>
 <div class="photo"><img src="{{"/assets/img/posts/2017-04-24-bowling-35.jpg" | relative_url}}"></div>
 <div class="photo"><img src="{{"/assets/img/posts/2017-04-24-bowling-36.jpg" | relative_url}}"></div>
 <div class="photo"><img src="{{"/assets/img/posts/2017-04-24-bowling-04.jpg" | relative_url}}"></div>
-<div class="photo vertical"><img src="{{"/assets/img/posts/2017-04-24-bowling-12.jpg" | relative_url}}"></div>
 <div class="photo"><img src="{{"/assets/img/posts/2017-04-24-bowling-24.jpg" | relative_url}}"></div>
 <div class="photo"><img src="{{"/assets/img/posts/2017-04-24-bowling-33.jpg" | relative_url}}"></div>
 <div class="photo"><img src="{{"/assets/img/posts/2017-04-24-bowling-44.jpg" | relative_url}}"></div>
 <div class="photo"><img src="{{"/assets/img/posts/2017-04-24-bowling-48.jpg" | relative_url}}"></div>
 <div class="photo vertical"><img src="{{"/assets/img/posts/2017-04-24-bowling-52.jpg" | relative_url}}"></div>
+</div>
 </div>
 </div>
 </div>

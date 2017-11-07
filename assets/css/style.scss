@@ -210,7 +210,7 @@ nav.nav {
     }
     &:hover {
       padding-left: 6px;
-      box-shadow: inset 0px -0.26em 0px 0px rgba($orange, 0.42);
+      box-shadow: inset 0px -0.26em 0px 0px rgba($blue, 0.42);
       color: $dark-black;
       &:after {
         margin-left: 1em;
@@ -339,7 +339,7 @@ nav.nav {
   &.header-guidelines {
     height: 6vw;
     min-height: 300px;
-    background-image: radial-gradient(circle farthest-side at right top, $purple, $darkest-blue 125%);
+    background-image: radial-gradient(circle farthest-side at right top, $blue, $darkest-blue 125%);
     @include vertical-center;
     text-align: center;
     h1 {
@@ -573,7 +573,7 @@ footer.site-footer {
     margin-bottom: 1em;
     a {
       color: rgba($white, 0.68);
-      transition: 250ms $transition-snap;
+      transition: 400ms $transition-ease;
       &:hover {
         color: $dark-black;
         box-shadow: inset 0 -1.618em 0 0 $yellow;
@@ -597,7 +597,3 @@ footer.site-footer {
 // About Page
 // ----------
 {% include scss/about.scss %}
-
-// Page Specific Overrides
-// ----------
-{% include scss/page-level-overrides.scss %}

@@ -5,7 +5,7 @@ subtitle: Leaderboard
 meta: Leaderboard, information, and prizes for the Midwest Management Summit 2017 Pac-Man Championships.
 ---
 <div class="pacman-scores">
-{% assign pacman = (site.data.pacman | sort: 'score' | reverse) %}
+{% assign pacman = site.data.pacman | sort: 'score' | reverse %}
 {% for game in pacman %}
   <div class="pacman-score {% if forloop.first == true %}champion{% endif %}">
     <div class="pacman-score-content">

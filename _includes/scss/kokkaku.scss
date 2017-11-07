@@ -1,7 +1,6 @@
 // Copyright 2017, Adaptiva
 // Open Source
-// http://design.adaptiva.com
-//
+// https://design.adaptiva.com
 // Author: Jesse Rogers, Creative Director, Adaptiva
 // Desc: The Kokkaku (meaning "bones" or "skeleton" in Japanese) Framework is a work in pregress by the Adaptiva Design Lab to establish a central code library for front-end web development at Adaptiva.
 * {
@@ -649,17 +648,36 @@ li.tertiary-nav-item {
   }
 }
 
-//   Posts section
-.insights-article-img {
-  display: block;
+// Collapsible Section
+
+.collapsible-title {
+  position: relative;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid $blue;
   cursor: pointer;
-  margin-bottom: $spacing-normal;
-  img {
+  &::before,
+  &::after {
+    content: '';
     display: block;
-    width: 100%;
+    height: 2px;
+    width: 1rem;
+    background: $blue;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    transition: 500ms $transition-ease-in;
   }
-  p {
-    color: inherit;
+  &::after {
+    transform: translateY(-50%) rotate(90deg);
+  }
+  &.is-expanded {
+    &:before {
+      transform: translateY(-50%) rotate(-180deg);
+    }
+    &:after {
+      transform: translateY(-50%) rotate(-180deg);
+    }
   }
 }
 

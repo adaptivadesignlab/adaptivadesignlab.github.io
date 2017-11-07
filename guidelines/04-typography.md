@@ -9,8 +9,6 @@ typekit: load
 ---
 We chose fonts that we believe accurately reflect the spirit of Adaptiva. The fonts are clean, strong, and well, we just like them. They’re cool fonts.
 
-For the sake of web performance and _convenience_ (see the [introduction]({{site.baseurl}}/guidelines)), the rest of this site is using a Google web font that we thought looked good for this specific, isolated use case.
-
 **Warning**: If you use the wrong fonts in branded materials, I will _hunt you down_ and lecture you while I check your system to make sure you've installed our typefaces.
 
 ## Typefaces
@@ -23,7 +21,7 @@ Futura PT Heavy is our alternative font. It's bold, honest, and demands attentio
 
 <h3 style="font-family: 'Segoe UI', 'Poppins', sans-serif; font-weight: normal;">Segoe UI</h3>
 This isn't really our brand font, but it's what we use in Microsoft Office documents that aren't exported to PDF, such as Word templates, product documentation, PowerPoint presentations, etc. It's a system font that the vast majority of our customer base already has, and it's not too far off from Museo Sans. Thanks, Microsoft!
-<div>
+<div style="margin-bottom: 1.618rem;">
 <a class="button purple" href="https://adaptiva.sharepoint.com/TeamSite/_layouts/15/guestaccess.aspx?guestaccesstoken=98fQQ%2fBDEeUzjRftY1mssxJ2Q0TI%2bYoM5nGeGcrEL0Q%3d&docid=2_077fd491fba314732a26a5d1a539a9d0c&rev=1" target="_blank">Download Brand Fonts</a>
 </div>
 **Note**: The above download link is restricted to Adaptiva staff and requires authentication. We have licensed Museo Sans and Futura PT for our use only, so do _not_ distribute brand fonts outside the company. Since Segoe UI is a system font, we don't have a license for it, so it's not distributable anyway.
@@ -34,9 +32,9 @@ Our type scale is based on the golden ratio (~1.618) and a starting point of `10
 {% for type in site.data.type-scale %}
 <div class="j-row j-col j-col-12 wrap type vertical-center-row">
 <div class="j-col j-col-6" style="padding-left: 0;"><span style="font-size: {{type.scale}}; font-weight: {% if type.display-weight %}{{type.display-weight}}{% else %}{{type.font-weight}}{% endif %}; font-family: {{type.font-family}};">{{type.title}}</span></div>
-<div class="j-col j-col-2"><code style="font-size: 10px;">font-weight</code><br><span style="font-weight: {% if type.display-weight %}{{type.display-weight}}{% else %}{{type.font-weight}}{% endif %};">{{type.font-weight}}</span></div>
-<div class="j-col j-col-2"><code style="font-size: 10px;">font-size</code><br>{{type.font-size}}</div>
-<div class="j-col j-col-2"><code style="font-size: 10px;">scale</code><br><code>{{type.scale}}</code></div>
+<div class="j-col j-col-2"><code style="font-size: 10px; margin-bottom: 6px; display: inline-block;">font-weight</code><br><span style="font-weight: {% if type.display-weight %}{{type.display-weight}}{% else %}{{type.font-weight}}{% endif %};">{{type.font-weight}}</span></div>
+<div class="j-col j-col-2"><code style="font-size: 10px; margin-bottom: 6px; display: inline-block;">font-size</code><br>{{type.font-size}}</div>
+<div class="j-col j-col-2"><code style="font-size: 10px; margin-bottom: 6px; display: inline-block;">scale</code><br>{{type.scale}}</div>
 </div>
 {% endfor %}
 <span style="color: #ccc;">* Heading 3 is an exception to the Golden Ratio rule

@@ -104,10 +104,10 @@ h3.guideline-nav-header {
         text-decoration: none;
         color: $dark-black;
         &:hover {
-          background: rgba($purple, 0.26);
+          background: rgba($blue, 0.26);
         }
         &.current {
-          background: $purple;
+          background: $blue;
           color: $white;
         }
       }

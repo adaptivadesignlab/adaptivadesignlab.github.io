@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 title: Adaptiva Recruiting Video
-meta: We made a video showcasing what it's like working at Adaptiva to support recruiting efforts
+meta: We made a video showcasing what it's like working at Adaptiva to support recruiting efforts.
 posted: May 3 2017
 category: blog
 author: Adam Haney
