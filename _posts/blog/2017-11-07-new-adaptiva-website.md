@@ -232,4 +232,4 @@ I encourage you to check it out and see the [new site](https://adaptiva.com) for
 If you need me, I'll be rewriting the entire brand book because this site launch and the changes it made to the brand identity have rendered a lot of it inaccurate.
 
 Don't forget to sign up to receive notifications on new Design Lab content:
-<iframe src="http://www2.adaptiva.com/l/139131/2017-04-24/223dw4" width="100%" height="250" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+<iframe src="https://go.pardot.com/l/139131/2017-04-24/223dw4" width="100%" height="250" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>

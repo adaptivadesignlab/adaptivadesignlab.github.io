@@ -65,4 +65,4 @@ Thanks for reading! We're making all sorts of other cool stuff right now, and we
 
 To receive notifications of new Design Lab entries, subscribe to the Design Lab blog here:
 
-<iframe src="http://www2.adaptiva.com/l/139131/2017-04-24/223dw4" width="100%" height="250" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+<iframe src="https://go.pardot.com/l/139131/2017-04-24/223dw4" width="100%" height="250" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
