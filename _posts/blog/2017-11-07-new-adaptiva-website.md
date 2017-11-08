@@ -182,7 +182,7 @@ The results here are dramatic indeed. Google's PageSpeed Insights rated our home
 
 ### 5. Unify look and feel
 
-As I mentioned before, incremental changes over years of evolving brand standards doesn't end well. By creating a framework and component system for this project, I was able to quickly a consistent look and feel across the site and ensure cohesion for future pages created with the same design system.
+As I mentioned before, incremental changes over years of evolving brand standards didn't end well. By developing a framework and component library for Adaptiva, I was able to quickly create a consistent look and feel across the site and ensure cohesion for future pages created with the same design system.
 
 I placed restrictions on the use of our color palette, setting a heavy focus on the blue and grayscale sections.
 
