@@ -59,7 +59,7 @@ The last tab displayed the schedule of gameplay, competition rules, general info
 </div>
 The community at MMS seemed to really enjoy our Pac-Man championship, and it was a good challenge to throw together an online solution that checked all the boxes in such a short amount of time.
 
-The site will stay up indefinitely, so you can see the live code here: [adaptiva.com/pacman](http://adaptiva.com/pacman)
+The site will stay up indefinitely, so you can see the live code here: [design.adaptiva.com/pacman](https://design.adaptiva.com/pacman/)
 
 Thanks for reading! We're making all sorts of other cool stuff right now, and we'll try to keep this blog updated.
 
