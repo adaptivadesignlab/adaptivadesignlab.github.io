@@ -79,7 +79,7 @@ For example, on the old [OneSite](https://adaptiva.com/products/#onesite) page, 
 We found that most users who went through the trouble of navigating this mess were just looking for a brochure or datasheet to download anyway.
 
 ### 4. Slow. Slow. Slow.
-The old site was hosted on WordPress, and it's no secret that most WordPress sites are burdened with thousands of lines of bloat, unnecessary HTTP requests, and all sorts of performance issues. WordPress sites tend to rely on several third-party plugins, so you're trusting rando developers from the internet to treat your users' precious bandwidth responsibly.
+The old site was hosted on WordPress, and it's no secret that most WordPress sites are burdened with thousands of lines of bloat, unnecessary HTTP requests, and a plethora of other annoying performance issues. WordPress sites tend to rely on several third-party plugins, so you're trusting rando developers from the internet to treat your users' precious bandwidth responsibly.
 
 This problem also exacerbated the navigational issue.
 
@@ -132,11 +132,12 @@ So I put particular effort into designing interfaces that are intuitive, purpose
 </div>
 </div>
 <p style="color:#aaa">The tertiary navigation component is common in the new site</p>
-For example, the tertiary nav component shown above allows the user to choose what information is shown to them by clicking. Clicking triggers a cool, snappy animation that might make them want to click on something else.
 
-The more things the user clicks on, the more they end up learning about Adaptiva.
+For example, the tertiary nav component shown above allows the user to choose what information they see by clicking, triggering a smooth, snappy animation that might make them want to click on something else.
 
-There's tons of other cool compononents on the [site](https://adaptiva.com), many that support swipe gestures and other slick experiences.
+The more a user clicks around, the more they end up learning about Adaptiva.
+
+There's gobs of other cool compononents on the [site](https://adaptiva.com), many that support swipe gestures and other slick experiences. _Gobs_, man.
 
 ### 3. Add more humanity
 
