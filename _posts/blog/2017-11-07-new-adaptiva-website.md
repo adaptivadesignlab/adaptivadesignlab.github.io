@@ -50,7 +50,7 @@ Over the last couple years, we've rolled out incremental improvements to the sit
 <p style="color:#aaa">adaptiva.com in early 2017</p>
 </div>
 
-These small changes _were_ improvements, but they ended up creating fragmentation in the site's look and feel. Illustration standards were changing rapidly, causing friction between contrasting styles. Colors were all over the place, buttons competed against each other, and visual hiearchy was nonexistent in some places.
+These small changes _were_ improvements, but they ended up creating fragmentation in the site's look and feel. Illustration standards were changing rapidly, causing friction between contrasting styles. Colors were all over the place, buttons competed against each other, and visual hierarchy was almost nonexistent on some pages.
 
 ### 2. Information overload
 Some of the metrics we saw room for improvement in were time on site and bounce rate. It was apparent that many users were abandoning their search for information. Why? Probably **cognitive overload**.
