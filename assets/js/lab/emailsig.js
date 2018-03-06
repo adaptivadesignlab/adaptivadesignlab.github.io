@@ -37,8 +37,9 @@ jQuery(function($) {
 			$('div#signature_cert').hide();
 		}
 		if (twitter) {
-			$('a#signature_twitter')
+			$('div.signature-twitter')
 			.show()
+			.find('a')
 			.attr({
 				'href':'https://twitter.com/' + twitter,
 				'title': 'Follow ' + firstName + ' on Twitter!',
@@ -46,7 +47,7 @@ jQuery(function($) {
 			})
 			.text('@' + twitter);
 		} else {
-			$('span#signature_twitter').hide();
+			$('div.signature-twitter').hide();
 		}
 		$('#signature_email').html(email).attr('href', 'mailto:' + email);
 		$('#generated-signature > span').hide();
