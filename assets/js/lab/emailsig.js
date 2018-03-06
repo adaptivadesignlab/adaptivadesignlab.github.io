@@ -13,9 +13,9 @@ jQuery(function($) {
 			firstName = $(this).find('#first_name').val(),
 			lastName = $(this).find('#last_name').val(),
 			jobTitle = $(this).find('#job_title').val(),
-			email = $(this).find('#email').val(),
 			officeExt = $(this).find('#office_ext').val(),
-			mobile = $(this).find('#mobile').val();
+			mobile = $(this).find('#mobile').val(),
+			email = firstName.toLowerCase() + '.' + lastName.toLowerCase() + '@adaptiva.com';
 
 		e.preventDefault();
 

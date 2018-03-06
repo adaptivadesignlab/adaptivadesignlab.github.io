@@ -44,6 +44,9 @@ input#office_ext {
   button {
     border: 0;
   }
+	@media #{$mobile}, #{$tablet} {
+		text-align: left;
+	}
 }
 div#generated-signature {
   background: #fff;
