@@ -13,8 +13,10 @@ jQuery(function($) {
 			firstName = $(this).find('#first_name').val(),
 			lastName = $(this).find('#last_name').val(),
 			jobTitle = $(this).find('#job_title').val(),
+			cert = $(this).find('#cert').val(),
 			officeExt = $(this).find('#office_ext').val(),
 			mobile = $(this).find('#mobile').val(),
+			twitter = $(this).find('#twitter').val(),
 			email = firstName.toLowerCase() + '.' + lastName.toLowerCase() + '@adaptiva.com';
 
 		e.preventDefault();
@@ -25,9 +27,26 @@ jQuery(function($) {
 			$('#signature_office').html(' <span class="gray">x</span>' + officeExt);
 		}
 		if (mobile) {
-			$('#signature_mobile').html(mobile + '<br>')
+			$('#signature_mobile').html(mobile + '<br>');
 		} else {
 			$('span.mobile').hide();
+		}
+		if (cert) {
+			$('div#signature_cert').show().html(cert + '<br>');
+		} else {
+			$('div#signature_cert').hide();
+		}
+		if (twitter) {
+			$('a#signature_twitter')
+			.show()
+			.attr({
+				'href':'https://twitter.com/' + twitter,
+				'title': 'Follow ' + firstName + ' on Twitter!',
+				'target':'_blank'
+			})
+			.text('@' + twitter);
+		} else {
+			$('span#signature_twitter').hide();
 		}
 		$('#signature_email').html(email).attr('href', 'mailto:' + email);
 		$('#generated-signature > span').hide();

@@ -52,6 +52,34 @@ css: emailsig.css
 					<input class="full-width-input" type="tel" name="mobile" id="mobile" placeholder="ex: +X XXX-XXX-XXXX">
 				</div>
 			</div>
+			<div class="j-row extras collapsible-section">
+				<div class="j-row">
+					<div class="j-col j-col-12">
+						<h4 class="blue collapsible-title">
+							Additional Options
+						</h4>
+					</div>
+				</div>
+				<div class="collapsible-section--content" style="display: none;">
+					<div class="j-row twitter-handle">
+						<div class="j-col j-col-2">
+							<label for="twitter">Twitter</label>
+						</div>
+						<div class="j-col j-col-10">
+							<span class="gray">@</span>
+							<input type="text" name="twitter" id="twitter" placeholder="username">
+						</div>
+					</div>
+					<div class="j-row certifcations">
+						<div class="j-col j-col-2">
+							<label for="cert">Certifications</label>
+						</div>
+						<div class="j-col j-col-10">
+							<input type="text" name="cert" id="cert" class="full-width-input">
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="j-row vertical-center-row submit-signature">
 				<div class="j-col j-col-6" style="text-align: left;">
 					<span class="blue">*</span>&nbsp; <span class="gray">Required field</span>
@@ -72,12 +100,15 @@ css: emailsig.css
 			<div class="signature" style="display: none;">
 				<span style="color: #0860b8; font-weight: bold; font-family: 'Segoe UI', Helvetica, sans-serif;">—</span><br>
 				<span class="name" id="signature_name" style="color: #0860b8; font-weight: bold; font-family: 'Segoe UI', Helvetica, sans-serif;"></span><br>
-				<span class="job-title" style="color: #333; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;" id="signature_title"></span><span style="color: #999; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;">, Adaptiva</span><br>
-				<span class="office" style="color: #0860b8; font-weight: bold; font-family: 'Segoe UI', Helvetica, sans-serif;">O</span> <span class="office" style="color: #333; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;">+1 425-823-4500</span>
+				<span class="job-title" style="color: #333; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;" id="signature_title"></span><span style="color: #999; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;">, Adaptiva</span>
+				<div id="signature_cert" style="display: none; font-family: 'Segoe UI', Helvetica, sans-serif; color: #999;"></div>
+				<a href="" id="signature_twitter" style="display: none; font-family: 'Segoe UI', Helvetica, sans-serif; color: #0860b8; text-decoration: none;"></a><br>
+				<span id="signature_officeIcon" class="office" style="color: #0860b8; font-weight: bold; font-family: 'Segoe UI', Helvetica, sans-serif;">O</span> <span class="office" style="color: #333; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;">+1 425-823-4500</span>
 				<span
 				 style="color: #333; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;" id="signature_office"></span><br>
 					<span class="mobile" style="color: #0860b8; font-weight: bold; font-family: 'Segoe UI', Helvetica, sans-serif;">M</span> <span class="mobile" style="color: #333; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;" id="signature_mobile"></span>
-					<a class="email" href="#0" style="color: #0860b8; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif; text-decoration: none;" id="signature_email"></a>
+					<a class="email" href="" style="color: #0860b8; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif; text-decoration: none;" id="signature_email"></a><br>
+					<a href="https://adaptiva.com" title="Visit adaptiva.com" style="color: #0860b8; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif; text-decoration: none;" id="signature_url">adaptiva.com</a>
 			</div>
 		</div>
 	</div>

@@ -3,9 +3,11 @@
 	height: 42px;
 	position: relative;
 	.labBanner-logo {
-		display: inline-block;
 		height: 42px;
-		position: relative;
+		position: absolute;
+		right: $spacing-small;
+		top: 0;
+		width: 100px;
 		svg {
 			display: block;
 			height: $spacing-normal;
