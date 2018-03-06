@@ -1,0 +1,38 @@
+.labTitle,
+.labContent {
+	padding: $spacing-normal $spacing-normal $spacing-normal 314px;
+	padding: $spacing-normal $spacing-normal $spacing-normal calc(1rem + 288px);
+	transition: 600ms $transition-ease-in;
+	&.is-toggled {
+		padding: $spacing-normal;
+	}
+	@media #{$mobile}, #{$tablet} {
+		padding: 0;
+	}
+}
+.labTitle {
+	background: $light-gray;
+	h1 {
+		font-size: $type-large;
+		margin: 0;
+	}
+	@media #{$mobile}, #{$tablet} {
+		padding: $spacing-small 0;
+		&.is-toggled {
+			padding: $spacing-small 0;
+		}
+		> div {
+			margin: 0;
+		}
+	}
+}
+.labContent {
+	.content {
+		margin: 0;
+	}
+	@media #{$mobile}, #{$tablet} {
+		&.is-toggled {
+			padding: 0;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.labNav {
+	background: $darkest-blue;
+	height: 100%;
+	height: calc(100% - 42px);
+	left: 0;
+	position: absolute;
+	transition: 600ms $transition-ease-in;
+	width: 288px;
+	@include z-index-2;
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	&.is-toggled {
+		left: -288px;
+	}
+	@media #{$mobile}, #{$tablet} {
+		left: -288px;
+		&.is-toggled {
+			left: 0;
+		}
+	}
+}
+.labNav-item {
+	margin: 0;
+	padding: 0;
+}
+.labNav-link {
+	color: $blue;
+	display: block;
+	padding: $spacing-small;
+	transition: 300ms $transition-ease;
+	&.is-current,
+	&:hover {
+		color: $white;
+	}
+	&.is-current {
+		box-shadow: inset 0.42em 0 0 0 $blue;
+	}
+}
+p.labCopyright {
+	bottom: 0;
+	margin: 0;
+	padding: $spacing-small;
+	position: absolute;
+	width: 100%;
+}

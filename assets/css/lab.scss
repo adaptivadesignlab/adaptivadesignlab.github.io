@@ -1,0 +1,22 @@
+---
+---
+html,
+body {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	&.is-locked {
+		overflow: hidden;
+	}
+}
+
+{% include scss/kokkaku/kokkaku.scss %}
+{% include scss/lab/labBanner.scss %}
+{% include scss/lab/labNav.scss %}
+{% include scss/lab/labContent.scss %}
+
+body {
+	&.lighter-gray {
+		background: $lighter-gray;
+	}
+}

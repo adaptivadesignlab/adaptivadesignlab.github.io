@@ -42,7 +42,7 @@ The Adaptiva logo is pretty versatile and looks good on a variety of backgrounds
 <div style="padding: 1.618em; background: #0860b8;">{% include svg/adaptiva-logo-white.svg %}</div>
 </div>
 <div class="j-col j-col-6" style="padding: 0;">
-<div style="padding: 1.618em; background: #404041;">{% include svg/adaptiva-logo-white.svg %}</div>
+<div style="padding: 1.618em; background: #404041;">{% include svg/adaptiva-logo-dont.svg %}</div>
 </div>
 </div>
 
@@ -56,9 +56,6 @@ The Adaptiva logo is pretty versatile and looks good on a variety of backgrounds
 </div>
 <div class="j-col j-col-6" style="padding: 0;">
 <div style="padding: 1.618em; background: #CE7B91;">{% include svg/adaptiva-logo-white.svg %}</div>
-</div>
-<div class="j-col j-col-6" style="padding: 0;">
-<div style="padding: 1.618em; background: #404041;">{% include svg/adaptiva-logo-dont.svg %}</div>
 </div>
 </div>
 

@@ -1,0 +1,102 @@
+---
+layout: lab
+title: Adaptiva Email Signature Generator
+meta: A custom-created email signature generator for Adaptiva employees by the Adaptiva Design Lab
+contentColor: lighter-gray
+js: emailsig.js
+css: emailsig.css
+---
+<div class="j-row" id="emailSig-title">
+	<div class="j-col j-col-12">
+		<h3>Fill out the form below to generate your branded Adaptiva email signature</h3>
+	</div>
+</div>
+<div class="j-row" id="emailSig-form">
+	<div class="j-col j-col-10">
+		<form class="signature-generator" method="post" action="javascript:void(0);">
+			<div class="j-row name">
+				<div class="j-col j-col-2">
+					<label>Name <span class="blue" title="Required field">*</span></label>
+				</div>
+				<div class="j-col j-col-10 wrap">
+					<div class="j-col j-col-6 first-name">
+						<input placeholder="First Name" class="full-width-input" type="text" name="first_name" id="first_name" required>
+					</div>
+					<div class="j-col j-col-6 last-name">
+						<input placeholder="Last Name" class="full-width-input" type="text" name="last_name" id="last_name" required>
+					</div>
+				</div>
+			</div>
+			<div class="j-row job-title">
+				<div class="j-col j-col-2">
+					<label for="job_title">Title <span class="blue" title="Required field">*</span></label>
+				</div>
+				<div class="j-col j-col-10">
+					<input class="full-width-input" type="text" name="job_title" id="job_title" required>
+				</div>
+			</div>
+			<div class="j-row office-ext">
+				<div class="j-col j-col-2">
+					<label for="office_ext">Office Ext.</label>
+				</div>
+				<div class="j-col j-col-10">
+					<span>+1 425-823-4500 </span><span class="gray">x</span>
+					<input type="tel" name="office_ext" id="office_ext">
+				</div>
+			</div>
+			<div class="j-row mobile">
+				<div class="j-col j-col-2">
+					<label for="mobile">Mobile</label>
+				</div>
+				<div class="j-col j-col-10">
+					<input class="full-width-input" type="tel" name="mobile" id="mobile" placeholder="ex: +X XXX-XXX-XXXX">
+				</div>
+			</div>
+			<div class="j-row email">
+				<div class="j-col j-col-2">
+					<label for="email">Email <span class="blue" title="Required field">*</span></label>
+				</div>
+				<div class="j-col j-col-10">
+					<input class="full-width-input" type="email" name="email" id="email" required>
+				</div>
+			</div>
+			<div class="j-row submit-signature">
+				<div class="j-col j-col-6" style="text-align: left;">
+					<span class="blue">*</span>&nbsp; <span class="gray">Required field</span>
+				</div>
+				<div class="j-col j-col-6">
+					<button class="button">Generate</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="j-row" id="emailSig-result">
+	<div class="j-col j-col-6">
+		<span class="type-large gray" style="font-weight: 700;">—</span>
+		<h3 class="blue">Your Signature</h3>
+		<div id="generated-signature">
+			<span class="gray">Your formatted signature will appear here</span>
+			<div class="signature" style="display: none;">
+				<span style="color: #0860b8; font-weight: bold; font-family: 'Segoe UI', Helvetica, sans-serif;">—</span><br>
+				<span class="name" id="signature_name" style="color: #0860b8; font-weight: bold; font-family: 'Segoe UI', Helvetica, sans-serif;"></span><br>
+				<span class="job-title" style="color: #333; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;" id="signature_title"></span><span style="color: #999; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;">, Adaptiva</span><br>
+				<span class="office" style="color: #0860b8; font-weight: bold; font-family: 'Segoe UI', Helvetica, sans-serif;">O</span> <span class="office" style="color: #333; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;">+1 425-823-4500</span>
+				<span
+				 style="color: #333; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;" id="signature_office"></span><br>
+					<span class="mobile" style="color: #0860b8; font-weight: bold; font-family: 'Segoe UI', Helvetica, sans-serif;">M</span> <span class="mobile" style="color: #333; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif;" id="signature_mobile"></span>
+					<a class="email" href="#0" style="color: #0860b8; font-weight: normal; font-family: 'Segoe UI', Helvetica, sans-serif; text-decoration: none;" id="signature_email"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="j-row" id="emailSig-clear" style="display: none;">
+	<div class="j-col j-col-12">
+		<a href="javascript:void(0);" class="button red js-start-over">Start Over</a>
+	</div>
+</div>
+<div class="j-row" id="success_msg" style="display: none;">
+	<div class="j-col j-col-6">
+		<p>Nice! Copy and paste the formatted text above into your Outlook signature and set it as your default.</p>
+	</div>
+</div>

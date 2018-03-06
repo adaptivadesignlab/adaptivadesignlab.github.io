@@ -1,0 +1,65 @@
+---
+---
+{% include scss/kokkaku/kokkaku.scss %}
+form.signature-generator {
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(black, .1);
+  margin-bottom: 1.618rem;
+  padding: 1.618rem;
+  .j-row {
+    margin-bottom: 1.618rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  input {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    font-size: 1rem;
+    transition: border 300ms ease;
+    &.full-width-input {
+      width: 100%;
+    }
+    &:focus {
+      border-color: #0860b8;
+    }
+    &::placeholder {
+      color: #ccc;
+      font-style: italic;
+    }
+    &:-webkit-autofill {
+      box-shadow: inset 0 -1.618em 0 0 white;
+    }
+  }
+	@media #{$mobile}, #{$tablet} {
+		padding: $spacing-normal 0;
+	}
+}
+input#office_ext {
+  width: 2.618em;
+}
+.submit-signature {
+  text-align: right;
+  button {
+    border: 0;
+  }
+}
+div#generated-signature {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(black, .1);
+  margin-bottom: 2.618rem;
+  padding: 2.618rem;
+  text-align: center;
+}
+div#emailSig-clear {
+	margin-bottom: 1.618rem;
+}
+.signature {
+  background: transparent;
+  text-align: left;
+  span, a {
+    background: transparent;
+  }
+}

@@ -196,7 +196,7 @@ Buttons pretty much only exist in blue and white now, and orange is almost nonex
 <img src="{{site.baseurl}}/assets/img/posts/2017-11-07-look-and-feel--mobile.jpg" style="display: block; margin: 0 0 1.618em; box-shadow: 6px 6px 0 0 rgba(0,0,0,0.2);" alt="Big photographic assets on new homepage on mobile" />
 </div>
 </div>
-<p style="color:#aaa">The new homeapge — big pictures!</p>
+<p style="color:#aaa">The new homepage — big pictures!</p>
 
 We've also reduced the number of illustrative assets on the site. Illustration is limited to iconography and the occasional blog feature image now.
 

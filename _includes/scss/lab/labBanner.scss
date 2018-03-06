@@ -1,0 +1,139 @@
+.labBanner {
+	background: $dark-blue;
+	height: 42px;
+	position: relative;
+	.labBanner-logo {
+		display: inline-block;
+		height: 42px;
+		position: relative;
+		svg {
+			display: block;
+			height: $spacing-normal;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	@media #{$mobile}, #{$tablet} {
+		.labBanner-logo {
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			svg {
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+		}
+	}
+}
+.labBanner-trigger-wrap {
+	background: $darkest-blue;
+	cursor: pointer;
+	display: inline-block;
+	height: 42px;
+	margin-right: $spacing-smallest;
+	position: relative;
+	width: 42px;
+	@media #{$mobile}, #{$tablet} {
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+}
+.labBanner-trigger {
+	left: 50%;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translate(-50%,-50%);
+	width: 24px;
+	@include z-index-7;
+	span {
+		background-color: $white;
+		display: block;
+		position: absolute;
+		width: 24px;
+		height: 2px;
+		-webkit-transition: 600ms $transition-ease-in;
+		transition: 600ms $transition-ease-in;
+	}
+	@media #{$desktop-sm}, #{$desktop}, #{$desktop-xl} {
+		span {
+			top: 11px;
+			background: $white;
+
+			&:first-child {
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+
+			&:last-child {
+				width: 24px;
+				right: auto;
+				-webkit-transform: rotate(-135deg);
+				transform: rotate(-135deg);
+			}
+		}
+		&.is-clicked {
+			span {
+				background: $white;
+
+				&:first-child {
+					top: 9px;
+					-webkit-transform: rotate(0deg);
+					transform: rotate(0deg);
+				}
+
+				&:last-child {
+					width: 16px;
+					right: auto;
+					top: 15px;
+					-webkit-transform: rotate(05deg);
+					transform: rotate(0deg);
+				}
+			}
+		}
+	}
+	@media #{$tablet}, #{$mobile} {
+		span {
+			background-color: $white;
+			display: block;
+			position: absolute;
+			width: 24px;
+			height: 2px;
+			-webkit-transition: 600ms $transition-ease-in;
+			transition: 600ms $transition-ease-in;
+
+			&:first-child {
+				top: 9px;
+			}
+
+			&:last-child {
+				top: 15px;
+				width: 16px;
+				left: 0;
+			}
+		}
+
+		&.is-clicked {
+			span {
+				top: 11px;
+				background: $blue;
+
+				&:first-child {
+					-webkit-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+
+				&:last-child {
+					width: 24px;
+					right: auto;
+					-webkit-transform: rotate(-135deg);
+					transform: rotate(-135deg);
+				}
+			}
+		}
+	}
+}

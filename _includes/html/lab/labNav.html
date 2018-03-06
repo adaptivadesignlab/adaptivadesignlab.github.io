@@ -1,0 +1,18 @@
+<section class="labNav">
+	<nav>
+		<ul>
+			<li class="labNav-item">
+				<a href="{{"/" | relative_url }}" title="Adaptiva Design Lab" class="labNav-link">Back to Home</a>
+			</li>
+			<li class="labNav-item">
+				<a href="{{"/lab/" | relative_url }}" title="Welcome to the Lab" class="labNav-link{% if page.url == "/lab/" %} is-current{% endif %}">Welcome to the Lab</a>
+			</li>
+			<li class="labNav-item">
+				<a href="{{"/lab/email-signature-generator/" | relative_url }}" title="Adaptiva Email Signature Generator" class="labNav-link{% if page.url == "/lab/email-signature-generator/" %} is-current{% endif %}">Email Signature Generator</a>
+			</li>
+		</ul>
+	</nav>
+	<p class="labCopyright dark-blue">
+		Copyright ©<script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Adaptiva. All rights reserved.
+	</p>
+</section>
